@@ -1,0 +1,33 @@
+{
+    "layer": "top",
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "battery", "network"],
+    
+    "hyprland/workspaces": {
+        "format": "{name}"
+    },
+    
+    "clock": {
+        "format": "󰥔 {:%H:%M}",
+        "on-click": "gnome-calendar"
+    },
+    
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰖁 {volume}%",
+        "format-icons": ["󰕿", "󰖀", "󰕾"],
+        "on-click": "pavucontrol"
+    },
+    
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+    
+    "network": {
+        "format-wifi": "󰖩 {signalStrength}%",
+        "format-disconnected": "󰖪",
+        "on-click": "nm-connection-editor"
+    }
+}

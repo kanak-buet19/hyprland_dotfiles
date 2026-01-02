@@ -1,0 +1,10 @@
+{
+    "editor.mouseWheelZoom": true
+}
+
+{
+  "terminal.integrated.fontFamily": "DejaVu Sans Mono",
+  "terminal.integrated.fontSize": 14,
+  "editor.fontFamily": "DejaVu Sans Mono",
+  "editor.fontSize": 14
+}

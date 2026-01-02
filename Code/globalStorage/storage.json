@@ -1,0 +1,110 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "724707424fe69ae8db7993d1b90c048d756e7b2e04e88fe3d728032f899e27c4",
+    "telemetry.devDeviceId": "b667d324-9b24-449b-a0bf-ab9f0ca6521c",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/kanak/kanak_personal/writing/manuscript_NIST_2025_PBF-LB_M"
+            },
+            {
+                "folderUri": "file:///home/kanak/.config/hypr"
+            },
+            {
+                "folderUri": "file:///home/kanak/kanak_personal/writing/cv"
+            }
+        ],
+        "emptyWindows": []
+    },
+    "windowControlHeight": 35,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/kanak/.config": "__default__profile__",
+            "file:///home/kanak/.config/hypr": "__default__profile__",
+            "file:///home/kanak": "__default__profile__",
+            "file:///home/kanak/.config/waybar": "__default__profile__",
+            "file:///home/kanak/.config/hypr/conf": "__default__profile__",
+            "file:///home/kanak/kanak_personal/writing/manuscript_NIST_2025_PBF-LB_M": "__default__profile__",
+            "file:///home/kanak/kanak_personal/writing/cv": "__default__profile__"
+        },
+        "emptyWindows": {}
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#1e1e1e",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#cccccc",
+            "background": "#1e1e1e",
+            "editorBackground": "#1e1e1e",
+            "titleBarBackground": "#3c3c3c",
+            "activityBarBackground": "#333333",
+            "sideBarBackground": "#252526",
+            "statusBarBackground": "#007acc",
+            "statusBarNoFolderBackground": "#68217a"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 170,
+            "auxiliaryBarWidth": 0,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 170,
+            "auxiliaryBarWidth": 234,
+            "workspaces": {
+                "2f58a77cdb81793845efd815bea9f271": {
+                    "sideBarVisible": false,
+                    "auxiliaryBarVisible": false
+                },
+                "0b7dfc721f112ff74ee51c373fa869be": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "b509c73649c3270b5cbde32683dfbb54": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "25764833f1febae90bf4c9a362041abf": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "c83fc08f436b82a8b9c280d0dc3f44a9": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "5769cf6ce0b2f27303c0f906ed3c366c": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "295e2070f2c5df66472201e15edf8387": {
+                    "sideBarVisible": false,
+                    "auxiliaryBarVisible": false
+                }
+            }
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/kanak/kanak_personal/writing/manuscript_NIST_2025_PBF-LB_M",
+            "backupPath": "/home/kanak/.config/Code/Backups/b47591ba2a7536c83ea7c02566ab7dbe",
+            "uiState": {
+                "mode": 0,
+                "x": 0,
+                "y": 0,
+                "width": 950,
+                "height": 520,
+                "zoomLevel": 1
+            }
+        },
+        "openedWindows": []
+    }
+}

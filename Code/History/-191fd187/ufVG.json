@@ -1,0 +1,45 @@
+{
+    "editor.mouseWheelZoom": true,
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+    "terminal.integrated.fontSize": 14,
+    "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Default Dark+",
+    
+    // Tell LaTeX Workshop where to find the PDF
+    "latex-workshop.latex.outDir": "./build",
+    
+    // Define the build tools
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "-outdir=build",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "copyPdf",
+            "command": "cp",
+            "args": [
+                "build/%DOCFILE%.pdf",
+                "%DOCFILE%.pdf"
+            ]
+        }
+    ],
+    
+    // Define the recipe (chain of tools)
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk + copy PDF",
+            "tools": ["latexmk", "copyPdf"]
+        }
+    ]
+}

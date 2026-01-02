@@ -1,0 +1,191 @@
+%===============================================
+%   Exact Style CV Template (Overleaf)
+%===============================================
+\documentclass[11pt,a4paper]{article}
+
+%===============================================
+%  Encoding & Page Setup
+%===============================================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+
+\setlength{\multicolsep}{0pt}
+\usepackage[
+  left=1.5cm,
+  right=1.5cm,
+  top=1.5cm,
+  bottom=1.5cm
+]{geometry}
+\setlength{\parindent}{0pt}
+
+
+
+%===============================================
+%  Packages
+%===============================================
+\usepackage{xcolor}
+\usepackage[
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=blue
+]{hyperref}
+
+\usepackage{enumitem}
+\setlist[itemize,1]{%
+  label=\textbullet,
+  left=0pt,
+  itemsep=0.3ex,
+  topsep=0.5ex
+}
+\setlist[itemize,2]{%
+  label=◦,
+  left=1em,
+  itemsep=0.2ex,
+  topsep=0.2ex,
+  font=\normalfont
+}
+
+% \usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{0.8em}{0.5em}
+
+
+% Section title style
+\titleformat{\section}{\large\bfseries}{}{5pt}{}[\vspace{-1ex}\rule{\textwidth}{0.5pt}\vspace{-1ex}]
+
+% List styles
+\setlist[itemize,1]{label=\textbullet,left=0pt,itemsep=0.3ex,topsep=0.5ex}
+\setlist[itemize,2]{label=◦,left=1em,itemsep=-1ex,topsep=0.2ex}
+
+% No page numbers
+\pagenumbering{gobble}
+
+%===============================================
+%                DOCUMENT
+%===============================================
+\begin{document}
+
+%=== Header ===
+\setlength{\tabcolsep}{0pt}
+\noindent
+\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+  {\LARGE\bfseries RAKIBUL ISLAM (KANAK)}  \\[6pt]
+  \texttt{rakibul.buet19@gmail.com} & LinkedIn: \href{https://www.linkedin.com/in/rakibul-islam-12a8a41b2/}{rakibul-islam-12a8a41b2/} \\
+  Portfolio: \href{https://sites.google.com/view/rakibul-buet19/}{sites.google.com/view/rakibul-buet19/} & Phone :+8801984731365 \\
+\end{tabular*}
+
+\section*{Research Interests}
+\begin{small}
+\begin{multicols}{3}
+\begin{itemize}[itemsep=0pt,topsep=0pt,leftmargin=*,parsep=0pt]
+  \item Additive manufacturing
+  \item Composite materials
+  \item CFD
+  \item Machine Learning
+  \item Microstructure Modelling
+\end{itemize}
+\end{multicols}
+\end{small}
+
+
+
+\section*{Education}
+
+\textbf{Bangladesh University of Engineering and Technology (BUET)} \hfill Dhaka,Bangladesh\\
+        BSc in Mechanical Engineering; \textit{CGPA: 3.61/4.00} \hfill Feb 2020 -- Mar 2025
+
+
+\section*{English Proficiency Test}
+IELTS (Academic) Score: \textit{8.0 \big(~Listening: 8.5, Reading: 9.0, Writing: 7.5, Speaking: 7.0~)}
+
+
+
+
+\section*{Research Experience}
+\begin{itemize}
+  \item \textbf{Numerical CFD Simulation of LPBF process of CoCrFeMnNi HEA(Undergraduate Thesis)}\\
+  \textit{Supervisor: Dr.\ Shahereen Chowdhury, Associate Professor, BUET }\hfill Nov 2023–Mar 2025
+    \begin{itemize}[itemsep=0.2ex, topsep=0.2ex]
+      \item Built meso‑scale Multiphase (VOF) CFD Model in ANSYS Fluent
+      \item Used UDF's to incorporate Marangoni, Recoil Pressure and Evaporative Heat loss effects
+      \item Used LIGGGHTS DEM software for powder generation
+      \item Utilised CALPHAD method to approximate thermophysical properties of HEA
+      
+      \item \textit{Software: ANSYS Fluent, Python, LIGGGHTS DEM, JMatPro}
+    \end{itemize}
+  \item \textbf{In‑Space Laser Welding Under Microgravity(On-going)}\\
+  \textit{Supervisor: Dr.\ Sourav Saha, Assistant Professor, Virginia Tech}
+    \begin{itemize}[itemsep=0.5ex, topsep=0.2ex]
+      \item Coupled ANSYS Fluent CFD with ExaCA for grain evolution analysis using Cellular Automata
+      \item Assessed gravity’s impact on microstructure evolution
+      
+      \item \textit{Software: ANSYS Fluent, Python, ExaCA}
+    \end{itemize}
+  \item \textbf{NIST AM Benchmark Challenge 2025(On-going)}\\
+  \textit{Supervisor: Dr.\ Abdullah Al Amin, Assistant Professor, University of Dayton}
+    \begin{itemize}[itemsep=0.5ex, topsep=0.2ex]
+      \item Predicted experimental melt‑pool dimensions \& cooling rates of IN718 (provided by NIST) via multiphase CFD model
+      
+    \end{itemize}
+\end{itemize}
+\section*{Projects}
+\begin{itemize}[itemsep=0.5ex, topsep=0.5ex]
+  \item \textbf{Enhancing Double Pipe Heat Exchanger Efficiency with Helical Fins} \hfill Jun 2022--Sept 2023\\
+\textit{Supervisor: Dr. Kazi Arafat Rahman, Associate Professor, BUET}
+    \begin{itemize}[itemsep=0.2ex, topsep=0.2ex]
+      \item Added brass/stainless steel helical fins to inner tube to boost turbulence \& heat transfer; validated via simulation \& prototype testing.
+    \end{itemize}
+
+  \item \textbf{Water Wizard -- Tethered Water Quality Monitoring Vehicle} \hfill Nov 2022--Feb 2023\\
+        \textit{Supervisor: Dr. Kazi Arafat Rahman, Associate Professor, BUET}
+    \begin{itemize}[itemsep=0.2ex, topsep=0.2ex]
+      \item Built Arduino-powered cobot with pH/TDS/temperature sensors, BLDC/DC propulsion \& buoyancy control; achieved 13.11 cm/s.
+    \end{itemize}
+
+  \item \textbf{Free Machine Design Course (ME 351)} 
+        
+    \begin{itemize}[itemsep=0.2ex, topsep=0.2ex]
+      \item Created 22 hr YouTube Video series covering ME 351 (Machine Design) syllabus to aid Mechanical Engineering Students.
+    \end{itemize}
+\end{itemize}
+
+\section*{Technical Skills and Certification}
+\begin{itemize}
+  \item \textbf{Ansys Fluent}: Multiphase VOF method, Solidification-Melting, UDF Writing, Journal Scripting
+  \item \textbf{COMSOL Multiphysics}: Advanced training workshop (DCE, BUET)
+  \item \textbf{MATLAB}: MathWorks certified; 4.5 credits with A+ at BUET
+  \item \textbf{Microstructure Modelling}: ExaCA
+  \item \textbf{CAD}: AutoCAD, SolidWorks
+  \item \textbf{MS Office}: Excel, PowerPoint, Word
+  \item \textbf{Programming}: C, Python
+\end{itemize}
+
+
+
+
+
+\section*{Industrial Attachment}
+\begin{itemize}
+  \item \textbf{KAFCO}, Karnaphuli Fertilizer Co. Ltd. (10-day attachment): Studied granular urea production, plant operations (Urea, Ammonia, Utility, RMCM, PHS), maintenance, task management, and industry economics.
+  \item \textbf{Siddhirganj 2x120 MW Peaking Power Plant}, Dhaka (Day visit): Explored operations of a 210 MW natural gas plant, energy generation/distribution, environmental practices, and sustainable solutions.
+\end{itemize}
+
+
+
+\section*{REFERENCE}
+\begin{itemize}[itemsep=0.8ex, topsep=0.5ex]
+  \item \href{https://me.buet.ac.bd/faculty/dr-shahereen-chowdhury}{\textbf{Dr.\ Shahereen Chowdhury}}\\
+        Associate Professor, Department of Mechanical Engineering, BUET\\
+        Email: \href{mailto:shahereen@me.buet.ac.bd}{shahereen@me.buet.ac.bd}
+  \item \href{https://www.aoe.vt.edu/people/faculty/sourav-saha.html}{\textbf{Dr.\ Sourav Saha}}\\
+        Assistant Professor, Kevin T.\ Crofton Dept.\ of Aerospace \& Ocean Eng., Virginia Polytechnic Institute and State University\\
+        Email: \href{mailto:souravsaha@vt.edu}{souravsaha@vt.edu}
+  \item \href{https://udayton.edu/directory/engineering/mechanical_and_aerospace/amin-abdullah.php}{\textbf{Dr.\ Abdullah Al Amin}}\\
+        Assistant Professor, Department of Mechanical \& Aerospace Engineering, University of Dayton\\
+        Email: \href{mailto:aamin1@udayton.edu}{aamin1@udayton.edu}
+\end{itemize}
+
+
+\end{document}

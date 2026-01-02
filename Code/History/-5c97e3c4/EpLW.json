@@ -1,0 +1,25 @@
+{
+    "files.exclude": {
+        "elsarticle-*.bst": true,
+        "elsarticle-template-*.tex": true,
+        "elsarticle.dtx": true,
+        "elsarticle.ins": true,
+        "elsarticle.cls": true,
+        "Validation figures_PBF_LB": true,
+        "README": true
+        // Removed: "build": true,
+        // Removed: "main.pdf": true,
+    },
+    "latex-workshop.view.pdf.viewer": "external",
+    "latex-workshop.view.pdf.external.viewer.command": "zathura",
+    "latex-workshop.view.pdf.external.viewer.args": [
+        "--synctex-editor-command",
+        "code -r -g \"%{input}:%{line}\"",
+        "%PDF%"
+    ],
+    "latex-workshop.view.pdf.external.synctex.command": "zathura",
+    "latex-workshop.view.pdf.external.synctex.args": [
+        "--synctex-forward=%LINE%:0:%TEX%",
+        "%PDF%"
+    ]
+}
