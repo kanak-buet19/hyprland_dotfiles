@@ -2,6 +2,7 @@
     font-family: "JetBrainsMono Nerd Font", monospace;
     font-size: 13px;
     font-weight: 500;
+    min-height: 0;
 }
 
 window#waybar {
@@ -19,8 +20,9 @@ tooltip label {
 }
 
 #workspaces button {
-    padding: 0 5px;
-    margin: 0px;
+    padding: 0 4px;
+    margin: 0;
+    min-height: 0;
     color: #666666;
     background: transparent;
     border-radius: 6px;
@@ -40,9 +42,13 @@ tooltip label {
 #clock,
 #battery,
 #pulseaudio,
-#network {
-    padding: 0 12px;
-    margin: 2px;
+#network,
+#cpu,
+#memory,
+#disk {
+    padding: 0 8px;
+    margin: 0;
+    min-height: 0;
 }
 
 #battery.warning {
@@ -51,11 +57,4 @@ tooltip label {
 
 #battery.critical {
     color: #f38ba8;
-}
-
-#cpu,
-#memory,
-#disk {
-    padding: 0 12px;
-    margin: 2px;
 }
