@@ -1,0 +1,16 @@
+catppuccin-gtk-theme-mocha
+fsearch
+google-chrome
+hyprland-relative-workspace-bin
+localsend-bin
+nautilus-open-any-terminal
+neofetch
+networkmanager-dmenu-git
+onlyoffice-bin
+teams-for-linux
+ttf-ms-fonts
+waypaper
+yaru-icon-theme
+yay
+yay-debug
+zoom
