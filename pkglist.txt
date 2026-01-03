@@ -73,6 +73,8 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 polkit-kde-agent
+postgresql
+power-profiles-daemon
 ppp
 qbittorrent
 qt5-wayland

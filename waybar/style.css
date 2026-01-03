@@ -1,5 +1,5 @@
 * {
-    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-family: "Ubuntu Nerd Font", sans-serif;
     font-size: 13px;
     font-weight: 500;
     min-height: 0;
@@ -51,10 +51,39 @@ tooltip label {
     min-height: 0;
 }
 
+/* Distinct colors for colorblind users */
+#clock {
+    color: #89b4fa;  /* Blue */
+}
+
+#battery {
+    color: #f9e2af;  /* Yellow */
+}
+
+#pulseaudio {
+    color: #a6e3a1;  /* Green */
+}
+
+#network {
+    color: #fab387;  /* Orange */
+}
+
+#cpu {
+    color: #cba6f7;  /* Purple */
+}
+
+#memory {
+    color: #f5c2e7;  /* Pink */
+}
+
+#disk {
+    color: #94e2d5;  /* Cyan */
+}
+
 #battery.warning {
-    color: #f9e2af;
+    color: #fab387;  /* Orange */
 }
 
 #battery.critical {
-    color: #f38ba8;
+    color: #f38ba8;  /* Red */
 }

@@ -19,7 +19,7 @@
   },
     
     "clock": {
-        "format": "{:%H:%M %a %m/%d}",
+        "format": "{:%d %b  %I:%M %p}",
         "tooltip-format": "{calendar}",
         "on-click": "xdg-open https://calendar.google.com",
         "calendar": {
@@ -71,6 +71,7 @@
         "format-charging": "󰂄 {capacity}%",
         "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
         "tooltip-format": "{capacity}%",
+        "on-click": "~/.config/waybar/scripts/power-profile-menu.sh",
         "states": {
             "warning": 35,
             "critical": 10
