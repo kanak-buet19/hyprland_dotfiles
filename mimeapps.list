@@ -24,7 +24,9 @@ application/json=org.gnome.gedit.desktop
 text/markdown=org.gnome.gedit.desktop
 text/x-log=org.gnome.gedit.desktop
 application/x-wayland-gnome-saved-search=thunar.desktop
+application/x-zerosize=onlyoffice-desktopeditors.desktop
 
 [Added Associations]
 image/png=imv.desktop;
 application/pdf=org.gnome.Evince.desktop;
+application/x-zerosize=onlyoffice-desktopeditors.desktop;
