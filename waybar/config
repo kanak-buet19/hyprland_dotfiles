@@ -49,13 +49,15 @@
     },
     
     "network": {
-        "format-wifi": "󰖩",
-        "format-ethernet": "󰀂",
-        "format-disconnected": "󰖪",
-        "tooltip-format-wifi": "{essid} ({signalStrength}%)",
-        "on-click": "alacritty -e nmtui"
-    },
-    
+            "interval": 2,
+            "format-wifi": "󰖩 {essid}  {bandwidthDownBits}  {bandwidthUpBits}",
+            "format-ethernet": "󰀂 {ifname}  {bandwidthDownBits}  {bandwidthUpBits}",
+            "format-disconnected": "󰖪",
+            "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+            "on-click": "alacritty -e nmtui"
+        },
+
+        
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-muted": "󰝟",
