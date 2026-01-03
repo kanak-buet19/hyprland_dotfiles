@@ -98,6 +98,7 @@ texlive-latexextra
 texlive-latexrecommended
 texlive-plaingeneric
 thunar
+timeshift
 tree
 ttf-cascadia-code
 ttf-dejavu
