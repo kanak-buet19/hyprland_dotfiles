@@ -8,6 +8,7 @@ bash-completion
 blueman
 bluez
 bluez-utils
+boost
 breeze
 brightnessctl
 btop
@@ -42,6 +43,7 @@ kvantum-theme-materia
 libnotify
 libpulse
 libva-nvidia-driver
+libxcrypt-compat
 linux
 linux-firmware
 linux-headers
@@ -84,6 +86,7 @@ rofi
 rp-pppoe
 rsync
 satty
+scotch
 sddm
 slurp
 smartmontools
