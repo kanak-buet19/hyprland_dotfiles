@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Gmail
+Exec=google-chrome-stable --app=https://mail.google.com
+Terminal=false
+Type=Application
+Icon=applications-internet
+Categories=Network;WebBrowser;
+StartupWMClass=google-chrome

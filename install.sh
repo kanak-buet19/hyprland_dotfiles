@@ -209,6 +209,7 @@ symlinks=(
 )
 
 
+
 for link_pair in "${symlinks[@]}"; do
     IFS=':' read -r source target <<< "$link_pair"
     source_path="$DOTFILES_DIR/$source"
@@ -236,6 +237,25 @@ if [ -d "$DOTFILES_DIR/hypr/scripts" ]; then
         mark_failed "Failed to make scripts executable"
     fi
 fi
+
+
+# Install web apps
+if [ -d "$DOTFILES_DIR/web-apps" ]; then
+    mkdir -p "$HOME/.local/share/applications"
+    for app in "$DOTFILES_DIR/web-apps"/*.desktop; do
+        if [ -f "$app" ]; then
+            app_name=$(basename "$app")
+            if cp "$app" "$HOME/.local/share/applications/" 2>/dev/null; then
+                mark_success "Installed web app: $app_name"
+            else
+                mark_failed "Failed to install: $app_name"
+            fi
+        fi
+    done
+    update-desktop-database "$HOME/.local/share/applications/" 2>/dev/null && mark_success "Updated desktop database"
+fi
+
+
 log ""
 
 # ======================

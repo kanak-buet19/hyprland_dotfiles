@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Overleaf
+Exec=google-chrome-stable --app=https://www.overleaf.com/project
+Terminal=false
+Type=Application
+Icon=text-editor
+Categories=Office;TextEditor;
+StartupWMClass=chromium-https://www.overleaf.com/project-Default
