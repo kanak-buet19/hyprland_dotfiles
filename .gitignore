@@ -1,0 +1,23 @@
+Code/Cache/
+Code/CachedConfigurations/
+Code/CachedData/
+Code/CachedExtensionVSIXs/
+Code/CachedProfilesData/
+Code/Code Cache/
+Code/Cookies*
+Code/Crashpad/
+Code/DIPS*
+Code/Dawn*/
+Code/Dictionaries/
+Code/GPUCache/
+Code/Local Storage/
+Code/Network Persistent State
+Code/Preferences
+Code/Session Storage/
+Code/Shared Dictionary/
+Code/TransportSecurity
+Code/Trust Tokens*
+Code/User/
+Code/logs/
+Code/machineid
+Code/languagepacks.json
