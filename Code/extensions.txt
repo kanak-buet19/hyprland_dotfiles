@@ -1,2 +1,2 @@
+github.github-vscode-theme
 james-yu.latex-workshop
-vscode-icons-team.vscode-icons

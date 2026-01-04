@@ -1,14 +1,23 @@
+
+[general]
+import = [
+  "/usr/lib/node_modules/alacritty-themes/themes/Atelierdune.light.toml"
+]
+
 [window]
-opacity = 0.9
-padding = { x = 10, y = 10 }
+opacity = 0.6
 decorations = "None"
 
-[font]
-size = 13.0
+  [window.padding]
+  x = 10
+  y = 10
 
-[font.normal]
-family = "JetBrains Mono"
-style = "Regular"
+[font]
+size = 13
+
+  [font.normal]
+  family = "JetBrains Mono"
+  style = "Regular"
 
 [colors.primary]
 background = "#1e1e2e"

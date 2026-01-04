@@ -1,3 +1,4 @@
+alacritty-themes
 catppuccin-gtk-theme-mocha
 fsearch
 google-chrome
@@ -15,4 +16,5 @@ waypaper
 yaru-icon-theme
 yay
 yay-debug
+zen-browser-bin
 zoom

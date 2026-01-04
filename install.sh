@@ -57,10 +57,12 @@ backup_items=(
     "$HOME/.config/hypr"
     "$HOME/.config/waybar"
     "$HOME/.config/alacritty"
-    "$HOME/.config/kitty"
     "$HOME/.config/Code"
+    "$HOME/.config/rofi"
+    "$HOME/.config/wireplumber"
     "$HOME/.config/mimeapps.list"
 )
+
 
 for item in "${backup_items[@]}"; do
     if [ -e "$item" ]; then
@@ -200,10 +202,12 @@ symlinks=(
     "hypr:$HOME/.config/hypr"
     "waybar:$HOME/.config/waybar"
     "alacritty:$HOME/.config/alacritty"
-    "kitty:$HOME/.config/kitty"
     "Code:$HOME/.config/Code"
+    "rofi:$HOME/.config/rofi"
+    "wireplumber:$HOME/.config/wireplumber"
     "mimeapps.list:$HOME/.config/mimeapps.list"
 )
+
 
 for link_pair in "${symlinks[@]}"; do
     IFS=':' read -r source target <<< "$link_pair"

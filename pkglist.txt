@@ -1,6 +1,7 @@
 adapta-gtk-theme
 adobe-source-code-pro-fonts
 alacritty
+alacritty-themes
 amd-ucode
 base
 base-devel
@@ -132,5 +133,6 @@ yay
 yay-debug
 zathura
 zathura-pdf-mupdf
+zen-browser-bin
 zoom
 zram-generator
