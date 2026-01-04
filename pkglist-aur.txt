@@ -8,6 +8,7 @@ neofetch
 networkmanager-dmenu-git
 onlyoffice-bin
 teams-for-linux
+timeshift-autosnap
 ttf-ms-fonts
 waypaper
 yaru-icon-theme
