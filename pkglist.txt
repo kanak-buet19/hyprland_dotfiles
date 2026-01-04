@@ -143,6 +143,5 @@ yay
 yay-debug
 zathura
 zathura-pdf-mupdf
-zen-browser-bin
 zoom
 zram-generator

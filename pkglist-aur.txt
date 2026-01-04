@@ -19,5 +19,4 @@ waypaper
 yaru-icon-theme
 yay
 yay-debug
-zen-browser-bin
 zoom
