@@ -1,8 +1,11 @@
 alacritty-themes
+arc-gtk-theme
 catppuccin-gtk-theme-mocha
 fsearch
 google-chrome
+grim-hyprland-git
 hyprland-relative-workspace-bin
+hyprworm
 localsend-bin
 nautilus-open-any-terminal
 neofetch
