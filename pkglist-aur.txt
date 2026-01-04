@@ -10,6 +10,7 @@ onlyoffice-bin
 teams-for-linux
 timeshift-autosnap
 ttf-ms-fonts
+visual-studio-code-bin
 waypaper
 yaru-icon-theme
 yay

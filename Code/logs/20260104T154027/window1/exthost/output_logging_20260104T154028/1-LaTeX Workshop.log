@@ -1,0 +1,204 @@
+[15:40:33.922][Logger] New log placeholder %WS1% registered for /home/kanak/kanak-personal/writing/manuscript_NIST_2025_PBF-LB_M .
+[15:40:33.922][Extension] Initializing LaTeX Workshop.
+[15:40:34.050][Build][Recipe] Set $LATEXWORKSHOP_DOCKER_LATEX: ""
+[15:40:34.050][Build][Recipe] Set $LATEXWORKSHOP_DOCKER_PATH: "docker"
+[15:40:34.077][Server] Creating LaTeX Workshop http and websocket server.
+[15:40:34.135][Format][Bib] Bibtex format config: {"tab":"  ","case":"lowercase","left":"{","right":"}","trailingComma":false,"sort":["key"],"alignOnEqual":true,"sortFields":false,"fieldsOrder":[],"firstEntries":["string","xdata"]}
+[15:40:34.179][Server] Server successfully started: {"address":"127.0.0.1","family":"IPv4","port":41409} .
+[15:40:34.183][Extension] Extension root: /home/kanak/.vscode/extensions/james-yu.latex-workshop-10.12.0
+[15:40:34.183][Extension] $PATH: /home/kanak/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+[15:40:34.183][Extension] $SHELL: /usr/bin/bash
+[15:40:34.183][Extension] $LANG: en_US.UTF-8
+[15:40:34.183][Extension] $LC_ALL: undefined
+[15:40:34.183][Extension] process.platform: linux
+[15:40:34.184][Extension] process.arch: x64
+[15:40:34.184][Extension] vscode.env.appName: Visual Studio Code
+[15:40:34.184][Extension] vscode.env.remoteName: undefined
+[15:40:34.184][Extension] vscode.env.uiKind: 1
+[15:40:34.185][Config] latex-workshop.latex.recipes: [{"name":"latexmk + copy PDF","tools":["latexmk","copyPdf"]}] .
+[15:40:34.186][Config] latex-workshop.latex.tools: [{"name":"latexmk","command":"latexmk","args":["-synctex=1","-interaction=nonstopmode","-file-line-error","-pdf","-outdir=build","%DOC%"]},{"name":"copyPdf","command":"cp","args":["build/%DOCFILE%.pdf","%DOCFILE%.pdf"]}] .
+[15:40:34.187][Config] latex-workshop.latex.outDir: "./build" .
+[15:40:34.191][Config] latex-workshop.view.pdf.viewer: "external" .
+[15:40:34.192][Config] latex-workshop.view.pdf.external.viewer.command: "zathura" .
+[15:40:34.192][Config] latex-workshop.view.pdf.external.viewer.args: ["--synctex-editor-command","code -r -g \"%{input}:%{line}\"","%PDF%"] .
+[15:40:34.192][Config] latex-workshop.view.pdf.external.synctex.command: "zathura" .
+[15:40:34.193][Config] latex-workshop.view.pdf.external.synctex.args: ["--synctex-forward=%LINE%:0:%TEX%","%PDF%"] .
+[15:40:34.218][Extension] Trigger characters for intellisense of LaTeX documents: ["\\",",","{","}"]
+[15:40:34.219][Root] Current workspace folders: ["file://%WS1%"]
+[15:40:34.219][Root] Try finding root from magic comment.
+[15:40:34.220][Extension] LaTeX Workshop initialized.
+[15:40:34.220][Root] Try finding root from active editor.
+[15:40:34.220][Root] Found root file from active editor: %WS1%/main.tex
+[15:40:34.221][Root] Root file changed: from %WS1%/main.tex to %WS1%/main.tex, langID latex . Refresh dependencies
+[15:40:34.221][Event] ROOT_FILE_CHANGED: "%WS1%/main.tex"
+[15:40:34.221][Cacher][Watcher] Reset.
+[15:40:34.221][Cacher][Watcher] Reset.
+[15:40:34.221][Cacher][Watcher] Reset.
+[15:40:34.224][Cacher] Adding %WS1%/main.tex .
+[15:40:34.225][Cacher][Watcher] Watched file://%WS1%/main.tex with a new .* watcher on %WS1% .
+[15:40:34.225][Event] FILE_WATCHED: "file://%WS1%/main.tex"
+[15:40:34.226][Cacher] Caching %WS1%/main.tex .
+[15:40:34.226][Event] ROOT_FILE_SEARCHED
+[15:40:34.289][Server] validOrigin is http://127.0.0.1:41409
+[15:40:34.385][Cacher] Input %WS1%/sections/intro.tex from %WS1%/main.tex .
+[15:40:34.386][Cacher] Adding %WS1%/sections/intro.tex .
+[15:40:34.386][Cacher][Watcher] Watched file://%WS1%/sections/intro.tex with a new .* watcher on %WS1%/sections .
+[15:40:34.386][Event] FILE_WATCHED: "file://%WS1%/sections/intro.tex"
+[15:40:34.387][Cacher] Caching %WS1%/sections/intro.tex .
+[15:40:34.388][Cacher] Updated inputs of %WS1%/sections/intro.tex .
+[15:40:34.388][Cacher] Parse LaTeX AST: %WS1%/sections/intro.tex .
+[15:40:34.390][Cacher] Input %WS1%/sections/methodology.tex from %WS1%/main.tex .
+[15:40:34.390][Cacher] Adding %WS1%/sections/methodology.tex .
+[15:40:34.391][Cacher][Watcher] Watched file://%WS1%/sections/methodology.tex by the .* watcher.
+[15:40:34.391][Event] FILE_WATCHED: "file://%WS1%/sections/methodology.tex"
+[15:40:34.391][Cacher] Caching %WS1%/sections/methodology.tex .
+[15:40:34.393][Cacher] Updated inputs of %WS1%/sections/methodology.tex .
+[15:40:34.393][Cacher] Parse LaTeX AST: %WS1%/sections/methodology.tex .
+[15:40:34.394][Cacher] Input %WS1%/sections/validation.tex from %WS1%/main.tex .
+[15:40:34.394][Cacher] Adding %WS1%/sections/validation.tex .
+[15:40:34.395][Cacher][Watcher] Watched file://%WS1%/sections/validation.tex by the .* watcher.
+[15:40:34.395][Event] FILE_WATCHED: "file://%WS1%/sections/validation.tex"
+[15:40:34.395][Cacher] Caching %WS1%/sections/validation.tex .
+[15:40:34.397][Cacher] Updated inputs of %WS1%/sections/validation.tex .
+[15:40:34.397][Cacher] Parse LaTeX AST: %WS1%/sections/validation.tex .
+[15:40:34.400][Structure][LaTeX] Error loading AST during structuring: %WS1%/main.tex .
+[15:40:34.401][Structure][LaTeX] Error loading AST during structuring: %WS1%/main.tex .
+[15:40:34.402][Structure][LaTeX] Error loading AST during structuring: %WS1%/main.tex .
+[15:40:34.414][Cacher] Input %WS1%/sections/results.tex from %WS1%/main.tex .
+[15:40:34.415][Cacher] Adding %WS1%/sections/results.tex .
+[15:40:34.415][Cacher][Watcher] Watched file://%WS1%/sections/results.tex by the .* watcher.
+[15:40:34.415][Event] FILE_WATCHED: "file://%WS1%/sections/results.tex"
+[15:40:34.416][Cacher] Caching %WS1%/sections/results.tex .
+[15:40:34.441][Cacher] Updated inputs of %WS1%/sections/results.tex .
+[15:40:34.441][Cacher] Parse LaTeX AST: %WS1%/sections/results.tex .
+[15:40:34.453][Cacher] Parsed LaTeX AST in 64.37 ms: %WS1%/sections/intro.tex .
+[15:40:34.458][Cacher] Updated elements in 4.31 ms: %WS1%/sections/intro.tex .
+[15:40:34.458][Event] FILE_PARSED: "%WS1%/sections/intro.tex"
+[15:40:34.466][Cacher] Input %WS1%/sections/conslusion.tex from %WS1%/main.tex .
+[15:40:34.466][Cacher] Adding %WS1%/sections/conslusion.tex .
+[15:40:34.467][Cacher][Watcher] Watched file://%WS1%/sections/conslusion.tex by the .* watcher.
+[15:40:34.467][Event] FILE_WATCHED: "file://%WS1%/sections/conslusion.tex"
+[15:40:34.467][Cacher] Caching %WS1%/sections/conslusion.tex .
+[15:40:34.467][Cacher] Updated inputs of %WS1%/main.tex .
+[15:40:34.467][Cacher] Parse LaTeX AST: %WS1%/main.tex .
+[15:40:34.468][Cacher] Updated inputs of %WS1%/sections/conslusion.tex .
+[15:40:34.468][Cacher] Parse LaTeX AST: %WS1%/sections/conslusion.tex .
+[15:40:34.554][Cacher] Parsed LaTeX AST in 160.38 ms: %WS1%/sections/methodology.tex .
+[15:40:34.581][Cacher] Updated elements in 26.89 ms: %WS1%/sections/methodology.tex .
+[15:40:34.581][Event] FILE_PARSED: "%WS1%/sections/methodology.tex"
+[15:40:34.583][Cacher] Parsed LaTeX AST in 185.63 ms: %WS1%/sections/validation.tex .
+[15:40:34.584][Cacher] Updated elements in 0.82 ms: %WS1%/sections/validation.tex .
+[15:40:34.584][Event] FILE_PARSED: "%WS1%/sections/validation.tex"
+[15:40:34.618][Cacher] Parsed LaTeX AST in 177.15 ms: %WS1%/sections/results.tex .
+[15:40:34.620][Cacher] Updated elements in 1.32 ms: %WS1%/sections/results.tex .
+[15:40:34.620][Event] FILE_PARSED: "%WS1%/sections/results.tex"
+[15:40:34.652][Cacher] Parsed LaTeX AST in 184.25 ms: %WS1%/main.tex .
+[15:40:34.652][File] Calling kpsewhich to resolve elsarticle.cls .
+[15:40:34.705][File] kpsewhich returned with './elsarticle.cls'.
+[15:40:34.705][File] kpsewhich resolved to '%WS1%/elsarticle.cls'.
+[15:40:34.709][Cacher] Parsed LaTeX AST in 241.46 ms: %WS1%/sections/conslusion.tex .
+[15:40:34.710][Cacher] Updated elements in 0.10 ms: %WS1%/sections/conslusion.tex .
+[15:40:34.710][Event] FILE_PARSED: "%WS1%/sections/conslusion.tex"
+[15:40:34.716][Cacher] Bib %WS1%/reference.bib from %WS1%/main.tex .
+[15:40:34.717][Intelli][Citation] Parsing .bib entries from %WS1%/reference.bib
+[15:40:34.717][Cacher][Watcher] Watched file://%WS1%/reference.bib with a new .bib watcher on %WS1% .
+[15:40:34.717][Event] FILE_WATCHED: "file://%WS1%/reference.bib"
+[15:40:34.717][Cacher] Updated elements in 65.07 ms: %WS1%/main.tex .
+[15:40:34.717][Event] FILE_PARSED: "%WS1%/main.tex"
+[15:40:34.719][Cacher] Parsing .fls %WS1%/build/main.fls .
+[15:40:34.721][Intelli][Citation] Parse BibTeX AST from %WS1%/reference.bib .
+[15:40:34.726][Cacher] Adding %WS1%/elsarticle.cls .
+[15:40:34.726][Cacher][Watcher] Watched file://%WS1%/elsarticle.cls by the .* watcher.
+[15:40:34.726][Event] FILE_WATCHED: "file://%WS1%/elsarticle.cls"
+[15:40:34.737][Intelli][Citation] Parsed 62 bib entries from %WS1%/reference.bib .
+[15:40:34.738][Event] FILE_PARSED: "%WS1%/reference.bib"
+[15:40:34.740][Cacher] Adding %WS1%/figures/schematic_2.pdf .
+[15:40:34.740][Cacher][Watcher] Watched file://%WS1%/figures/schematic_2.pdf with a new .* watcher on %WS1%/figures .
+[15:40:34.740][Event] FILE_WATCHED: "file://%WS1%/figures/schematic_2.pdf"
+[15:40:34.742][Cacher] Adding %WS1%/figures/schematic_1.pdf .
+[15:40:34.742][Cacher][Watcher] Watched file://%WS1%/figures/schematic_1.pdf by the .* watcher.
+[15:40:34.742][Event] FILE_WATCHED: "file://%WS1%/figures/schematic_1.pdf"
+[15:40:34.744][Structure] Structure force updated with 0 root sections for %WS1%/main.tex .
+[15:40:34.745][Event] STRUCTURE_UPDATED
+[15:40:34.747][Cacher] Adding %WS1%/figures/model_validation.pdf .
+[15:40:34.747][Cacher][Watcher] Watched file://%WS1%/figures/model_validation.pdf by the .* watcher.
+[15:40:34.747][Event] FILE_WATCHED: "file://%WS1%/figures/model_validation.pdf"
+[15:40:34.752][Cacher] Adding %WS1%/figures/nist_result_extrapolated.pdf .
+[15:40:34.752][Cacher][Watcher] Watched file://%WS1%/figures/nist_result_extrapolated.pdf by the .* watcher.
+[15:40:34.752][Event] FILE_WATCHED: "file://%WS1%/figures/nist_result_extrapolated.pdf"
+[15:40:34.753][Cacher] Adding %WS1%/figures/meltpool.pdf .
+[15:40:34.753][Cacher][Watcher] Watched file://%WS1%/figures/meltpool.pdf by the .* watcher.
+[15:40:34.753][Event] FILE_WATCHED: "file://%WS1%/figures/meltpool.pdf"
+[15:40:34.754][Cacher] Adding %WS1%/figures/exp fit.pdf .
+[15:40:34.754][Cacher][Watcher] Watched file://%WS1%/figures/exp fit.pdf by the .* watcher.
+[15:40:34.754][Event] FILE_WATCHED: "file://%WS1%/figures/exp fit.pdf"
+[15:40:34.755][Structure] Structure force updated with 10 root sections for %WS1%/main.tex .
+[15:40:34.755][Event] STRUCTURE_UPDATED
+[15:40:34.757][Cacher] Found .aux %WS1%/build/main.aux from .fls %WS1%/build/main.fls , parsing.
+[15:40:34.759][Cacher] Parsed .aux %WS1%/build/main.aux .
+[15:40:34.759][Cacher] Parsed .fls %WS1%/build/main.fls .
+[15:40:36.483][Extension] onDidSaveTextDocument triggered: file://%WS1%/main.tex
+[15:40:36.543][Cacher][Watcher] "change" emitted on file://%WS1%/main.tex.
+[15:40:36.544][Cacher] Caching %WS1%/main.tex .
+[15:40:36.544][Build] Auto build started detecting the change of a file: %WS1%/main.tex .
+[15:40:36.544][Event] AUTO_BUILD_INITIATED: {"type":"onFileChange","file":"%WS1%/main.tex"}
+[15:40:36.544][Build] The document of the active editor: file://%WS1%/main.tex
+[15:40:36.545][Build] The languageId of the document: latex
+[15:40:36.545][Build] Building root file: %WS1%/main.tex
+[15:40:36.545][Build][Recipe] Build root file %WS1%/main.tex
+[15:40:36.545][Event] FILE_CHANGED: "file://%WS1%/main.tex"
+[15:40:36.549][Build][Recipe] Preparing to run recipe: latexmk + copy PDF.
+[15:40:36.549][Build][Recipe] Prepared 2 tools.
+[15:40:36.560][Build][Recipe] outDir: %WS1%/build .
+[15:40:36.562][Build] Recipe step 1 The command is latexmk:["-synctex=1","-interaction=nonstopmode","-file-line-error","-pdf","-outdir=build","%WS1%/main"].
+[15:40:36.562][Build] env: undefined
+[15:40:36.563][Build] root: %WS1%/main.tex
+[15:40:36.563][Build] cwd: %WS1%
+[15:40:36.563][Build] cwd: %WS1%
+[15:40:36.569][Build] LaTeX build process spawned with PID 168813.
+[15:40:36.571][Cacher] Input %WS1%/sections/intro.tex from %WS1%/main.tex .
+[15:40:36.576][Cacher] Input %WS1%/sections/methodology.tex from %WS1%/main.tex .
+[15:40:36.578][Cacher] Input %WS1%/sections/validation.tex from %WS1%/main.tex .
+[15:40:36.579][Cacher] Input %WS1%/sections/results.tex from %WS1%/main.tex .
+[15:40:36.581][Cacher] Input %WS1%/sections/conslusion.tex from %WS1%/main.tex .
+[15:40:36.581][Cacher] Updated inputs of %WS1%/main.tex .
+[15:40:36.581][Cacher] Parse LaTeX AST: %WS1%/main.tex .
+[15:40:36.621][Cacher] Parsed LaTeX AST in 40.22 ms: %WS1%/main.tex .
+[15:40:36.622][File] kpsewhich cache hit on elsarticle.cls: %WS1%/elsarticle.cls .
+[15:40:36.626][Cacher] Bib %WS1%/reference.bib from %WS1%/main.tex .
+[15:40:36.626][Cacher] Updated elements in 4.44 ms: %WS1%/main.tex .
+[15:40:36.626][Event] FILE_PARSED: "%WS1%/main.tex"
+[15:40:36.634][Structure] Structure force updated with 10 root sections for %WS1%/main.tex .
+[15:40:36.635][Event] STRUCTURE_UPDATED
+[15:40:37.709][Parser][TexLog] Logged 20 messages.
+[15:40:37.711][Build] Finished a step in recipe with PID 168813.
+[15:40:37.711][Build] Recipe step 2 The command is cp:["build/main.pdf","main.pdf"].
+[15:40:37.711][Build] env: undefined
+[15:40:37.711][Build] root: %WS1%/main.tex
+[15:40:37.711][Build] cwd: %WS1%
+[15:40:37.712][Build] cwd: %WS1%
+[15:40:37.716][Build] LaTeX build process spawned with PID 168817.
+[15:40:37.718][Build] Finished a step in recipe with PID 168817.
+[15:40:37.718][Build] Successfully built %WS1%/main.tex .
+[15:40:37.718][Event] BUILD_DONE
+[15:40:37.719][Viewer] Call refreshExistingViewer: file://%WS1%/build/main.pdf .
+[15:40:37.719][Viewer] Not found PDF viewers to refresh: file://%WS1%/build/main.pdf
+[15:40:37.720][Cacher] Parsing .fls %WS1%/build/main.fls .
+[15:40:37.746][Cacher] Found .aux %WS1%/build/main.aux from .fls %WS1%/build/main.fls , parsing.
+[15:40:37.748][Cacher] Parsed .aux %WS1%/build/main.aux .
+[15:40:37.748][Cacher] Parsed .fls %WS1%/build/main.fls .
+[15:40:41.183][Commander] VIEW command invoked.
+[15:40:41.184][Root] Current workspace folders: ["file://%WS1%"]
+[15:40:41.184][Root] Try finding root from magic comment.
+[15:40:41.184][Root] Try finding root from active editor.
+[15:40:41.184][Root] Found root file from active editor: %WS1%/main.tex
+[15:40:41.185][Root] Keep using the same root file: %WS1%/main.tex
+[15:40:41.185][Event] ROOT_FILE_SEARCHED
+[15:40:41.185][Event] STRUCTURE_UPDATED
+[15:40:41.186][Viewer] Open external viewer for file://%WS1%/build/main.pdf
+[15:40:41.186][Viewer] Execute the external PDF viewer command The command is zathura:["--synctex-editor-command","code -r -g \"%{input}:%{line}\"","%WS1%/build/main.pdf"].
+[15:40:45.015][Viewer] The external PDF viewer stdout: 
+[15:40:45.015][Viewer] The external PDF viewer stderr: 
+[15:41:01.873][Cacher][Watcher] Reset.
+[15:41:01.873][Cacher][Watcher] Reset.
+[15:41:01.873][Cacher][Watcher] Reset.

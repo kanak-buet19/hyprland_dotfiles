@@ -1,0 +1,3 @@
+2026-01-04 15:36:48.375 [info] Started initializing default profile extensions in extensions installation folder. file:///home/kanak/.vscode/extensions
+2026-01-04 15:36:48.443 [warning] Failed to create default profile extensions manifest in extensions installation folder. file:///home/kanak/.vscode/extensions Unable to create file 'vscode-userdata:/home/kanak/.vscode/extensions/extensions.json' that already exists when overwrite flag is not set
+2026-01-04 15:36:48.443 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/kanak/.vscode/extensions

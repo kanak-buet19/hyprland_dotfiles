@@ -1,0 +1,37 @@
+2026-01-04 15:40:31.805 [info] [main] Log level: Info
+2026-01-04 15:40:31.805 [info] [main] Validating found git in: "git"
+2026-01-04 15:40:31.805 [info] [main] Using git "2.52.0" from "git"
+2026-01-04 15:40:31.805 [info] [Model][doInitialScan] Initial repository scan started
+2026-01-04 15:40:31.805 [info] > git rev-parse --show-toplevel [7ms]
+2026-01-04 15:40:31.806 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [4ms]
+2026-01-04 15:40:31.816 [info] [Model][openRepository] Opened repository (path): /home/kanak/kanak-personal/writing/manuscript_NIST_2025_PBF-LB_M
+2026-01-04 15:40:31.816 [info] [Model][openRepository] Opened repository (real path): /home/kanak/kanak-personal/writing/manuscript_NIST_2025_PBF-LB_M
+2026-01-04 15:40:31.816 [info] [Model][openRepository] Opened repository (kind): repository
+2026-01-04 15:40:31.828 [info] > git rev-parse --show-toplevel [2ms]
+2026-01-04 15:40:31.829 [info] > git config --get commit.template [6ms]
+2026-01-04 15:40:31.839 [info] > git rev-parse --show-toplevel [6ms]
+2026-01-04 15:40:31.844 [info] > git rev-parse --show-toplevel [1ms]
+2026-01-04 15:40:31.845 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [7ms]
+2026-01-04 15:40:31.857 [info] > git rev-parse --show-toplevel [9ms]
+2026-01-04 15:40:31.861 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]
+2026-01-04 15:40:31.862 [info] > git rev-parse --show-toplevel [2ms]
+2026-01-04 15:40:31.864 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2026-01-04 15:40:31.867 [info] > git status -z -uall [14ms]
+2026-01-04 15:40:31.886 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [5ms]
+2026-01-04 15:40:31.893 [info] > git config --get --local branch.main.vscode-merge-base [2ms]
+2026-01-04 15:40:31.896 [info] > git config --get commit.template [10ms]
+2026-01-04 15:40:31.897 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [1ms]
+2026-01-04 15:40:31.906 [info] > git merge-base refs/heads/main refs/remotes/origin/main [5ms]
+2026-01-04 15:40:31.910 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [5ms]
+2026-01-04 15:40:31.916 [info] > git diff --name-status -z --diff-filter=ADMR --find-renames=50% be7eb514fb5ab05ff9c5fc342795eb758a709ad0...refs/remotes/origin/main -- [6ms]
+2026-01-04 15:40:31.925 [info] > git status -z -uall [5ms]
+2026-01-04 15:40:31.926 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2026-01-04 15:40:32.334 [info] > git check-ignore -v -z --stdin [1ms]
+2026-01-04 15:40:34.354 [info] > git show --textconv :main.tex [6ms]
+2026-01-04 15:40:34.368 [info] > git ls-files --stage -- main.tex [15ms]
+2026-01-04 15:40:34.374 [info] > git cat-file -s bad610dced8bb97149cde92e64a42a6243c76ab9 [2ms]
+2026-01-04 15:40:35.471 [info] > git blame --root --incremental be7eb514fb5ab05ff9c5fc342795eb758a709ad0 -- main.tex [13ms]
+2026-01-04 15:40:38.855 [info] > git config --get commit.template [1ms]
+2026-01-04 15:40:38.862 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2026-01-04 15:40:38.874 [info] > git status -z -uall [7ms]
+2026-01-04 15:40:38.875 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
