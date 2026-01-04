@@ -1,6 +1,0 @@
-2026-01-04 15:39:44.470 [info] Getting Manifest... james-yu.latex-workshop
-2026-01-04 15:39:44.856 [info] Installing extension: james-yu.latex-workshop {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/kanak/.vscode/extensions/extensions.json","path":"/home/kanak/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"isApplicationScoped":false,"productVersion":{"version":"1.107.1","date":"2025-12-17T14:15:14.850Z"}}
-2026-01-04 15:39:48.787 [info] Extension signature verification result for james-yu.latex-workshop: Success. Internal Code: 0. Executed: true. Duration: 2087ms.
-2026-01-04 15:39:49.420 [info] Extracted extension to file:///home/kanak/.vscode/extensions/james-yu.latex-workshop-10.12.0: james-yu.latex-workshop
-2026-01-04 15:39:49.482 [info] Renamed to /home/kanak/.vscode/extensions/james-yu.latex-workshop-10.12.0
-2026-01-04 15:39:49.499 [info] Extension installed successfully: james-yu.latex-workshop vscode-userdata:/home/kanak/.vscode/extensions/extensions.json

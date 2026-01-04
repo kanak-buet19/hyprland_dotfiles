@@ -1,7 +1,0 @@
-2026-01-04 15:36:47.967 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
-2026-01-04 15:36:48.111 [info] Started local extension host with pid 167636.
-2026-01-04 15:36:48.135 [info] Started initializing default profile extensions in extensions installation folder. file:///home/kanak/.vscode/extensions
-2026-01-04 15:36:48.349 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/kanak/.vscode/extensions
-2026-01-04 15:36:49.004 [info] MCP Registry configured: https://api.mcp.github.com
-2026-01-04 15:36:49.048 [info] Settings Sync: Account status changed from uninitialized to unavailable
-2026-01-04 15:36:51.299 [info] [perf] Render performance baseline is 18ms
