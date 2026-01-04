@@ -1,0 +1,78 @@
+#!/bin/bash
+# Directories
+DOTFILES_DIR="$HOME/hyprland_dotfiles"
+CONFIG_DIR="$HOME/.config"
+
+# Check if dotfiles directory exists
+if [ ! -d "$DOTFILES_DIR" ]; then
+    echo "❌ Error: $DOTFILES_DIR not found"
+    exit 1
+fi
+
+cd "$DOTFILES_DIR" || exit 1
+
+echo "📦 Syncing configs to dotfiles repo..."
+
+# Copy configs
+rsync -av --delete "$CONFIG_DIR/hypr/" "$DOTFILES_DIR/hypr/"
+rsync -av --delete "$CONFIG_DIR/waybar/" "$DOTFILES_DIR/waybar/"
+rsync -av --delete "$CONFIG_DIR/alacritty/" "$DOTFILES_DIR/alacritty/"
+
+# Only copy VS Code if it exists
+if [ -d "$CONFIG_DIR/Code/User" ]; then
+    rsync -av --delete "$CONFIG_DIR/Code/User/settings.json" "$DOTFILES_DIR/Code/settings.json" 2>/dev/null
+    rsync -av --delete "$CONFIG_DIR/Code/User/keybindings.json" "$DOTFILES_DIR/Code/keybindings.json" 2>/dev/null
+fi
+
+# Only copy mimeapps if not the same file
+if [ "$CONFIG_DIR/mimeapps.list" != "$DOTFILES_DIR/mimeapps.list" ]; then
+    cp "$CONFIG_DIR/mimeapps.list" "$DOTFILES_DIR/mimeapps.list" 2>/dev/null
+fi
+
+# Update package lists
+pacman -Qqe > "$DOTFILES_DIR/pkglist.txt"
+pacman -Qqem > "$DOTFILES_DIR/pkglist-aur.txt"
+
+echo "✅ Configs synced"
+echo ""
+
+# Check for changes
+if git diff-index --quiet HEAD --; then
+    echo "ℹ️  No changes to commit"
+    exit 0
+fi
+
+# Show changes
+echo "📋 Changes:"
+git status --short
+echo ""
+
+# Prompt for commit message
+echo "Enter commit message (or 'q' to quit):"
+read commit_message
+
+if [ "$commit_message" = "q" ]; then
+    echo "❌ Aborted"
+    exit 0
+fi
+
+if [ -z "$commit_message" ]; then
+    echo "❌ Error: Commit message cannot be empty"
+    exit 1
+fi
+
+# Git workflow
+git add .
+
+if ! git commit -m "$commit_message"; then
+    echo "❌ Commit failed"
+    exit 1
+fi
+
+echo "🚀 Pushing to GitHub..."
+if git push origin main; then
+    echo "✅ Successfully pushed to GitHub!"
+else
+    echo "❌ Push failed"
+    exit 1
+fi
