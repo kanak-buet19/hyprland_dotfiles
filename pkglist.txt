@@ -4,9 +4,11 @@ alacritty
 alacritty-themes
 amd-ucode
 arc-gtk-theme
+archlinux-xdg-menu
 base
 base-devel
 bash-completion
+bitwarden
 blueman
 bluez
 bluez-utils
@@ -34,6 +36,7 @@ fzf
 gedit
 git
 github-cli
+glow
 google-chrome
 grim-hyprland-git
 grub
@@ -66,7 +69,6 @@ meson
 mousepad
 mpv
 nano
-nautilus-open-any-terminal
 neofetch
 network-manager-applet
 networkmanager
@@ -112,6 +114,7 @@ texlive-fontsextra
 texlive-fontsrecommended
 texlive-latex
 texlive-latexextra
+texlive-mathscience
 texlive-plaingeneric
 thunar
 timeshift
@@ -123,6 +126,7 @@ ttf-hack
 ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
 ttf-ms-fonts
+unzip
 uwsm
 vim
 visual-studio-code-bin
@@ -143,5 +147,6 @@ yay
 yay-debug
 zathura
 zathura-pdf-mupdf
+zen-browser-bin
 zoom
 zram-generator

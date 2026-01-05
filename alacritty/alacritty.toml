@@ -5,7 +5,7 @@ import = [
 ]
 
 [window]
-opacity = 0.6
+opacity = 0.5
 decorations = "None"
 
   [window.padding]
@@ -20,8 +20,8 @@ size = 13
   style = "Regular"
 
 [colors.primary]
-background = "#1e1e2e"
-foreground = "#cdd6f4"
+background = "#000000"
+foreground = "#ffffff"
 
 [colors.normal]
 black = "#45475a"
