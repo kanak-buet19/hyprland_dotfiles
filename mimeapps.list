@@ -30,3 +30,4 @@ application/x-zerosize=org.gnome.gedit.desktop
 image/png=imv.desktop;
 application/pdf=org.gnome.Evince.desktop;
 application/x-zerosize=onlyoffice-desktopeditors.desktop;org.gnome.gedit.desktop;
+video/mp4=vlc.desktop;smplayer.desktop;io.github.celluloid_player.Celluloid.desktop;
