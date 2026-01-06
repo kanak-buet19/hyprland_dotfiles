@@ -121,6 +121,7 @@ htop
 hyprland
 hyprland-relative-workspace-bin
 hyprlock
+hyprshell-bin
 hyprworm
 imv
 inkscape
@@ -143,6 +144,9 @@ linux-firmware
 linux-headers
 localsend-bin
 loupe
+lua-cjson
+lua-lgi
+lua-posix
 mako
 malcontent
 manuals

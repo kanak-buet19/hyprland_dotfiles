@@ -8,8 +8,10 @@ fsearch
 google-chrome
 grim-hyprland-git
 hyprland-relative-workspace-bin
+hyprshell-bin
 hyprworm
 localsend-bin
+lua-cjson
 neofetch
 networkmanager-dmenu-git
 onlyoffice-bin
