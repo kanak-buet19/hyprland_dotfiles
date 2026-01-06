@@ -17,8 +17,7 @@
                 "-synctex=1",
                 "-interaction=nonstopmode",
                 "-file-line-error",
-                "-pdf",
-            
+                "-pdf",          
                 "-outdir=build/%DOCFILE%",
                 "%DOC%"
             ]

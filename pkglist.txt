@@ -3,6 +3,7 @@ adobe-source-code-pro-fonts
 alacritty
 alacritty-themes
 amd-ucode
+antigravity
 arc-gtk-theme
 archlinux-xdg-menu
 asusctl
@@ -40,6 +41,8 @@ edk2-ovmf
 efibootmgr
 endeavour
 epiphany
+eww
+fd
 file-roller
 firefox
 flatpak
@@ -55,6 +58,7 @@ github-cli
 glow
 gnome-backgrounds
 gnome-boxes
+gnome-browser-connector
 gnome-builder
 gnome-calculator
 gnome-calendar
@@ -154,9 +158,11 @@ neofetch
 network-manager-applet
 networkmanager
 networkmanager-dmenu-git
+niri
 noto-fonts
 noto-fonts-emoji
 noto-fonts-extra
+npm
 ntfs-3g
 nvidia-open-dkms
 nwg-dock-hyprland
@@ -205,6 +211,8 @@ spectacle
 spotify-launcher
 supergfxctl
 sushi
+swaybg
+swaylock
 swell-foop
 swww
 sysprof
@@ -256,6 +264,7 @@ xorg-xinit
 yaru-icon-theme
 yay
 yay-debug
+ydotool
 yelp
 zathura
 zathura-pdf-mupdf

@@ -1,7 +1,9 @@
 alacritty-themes
+antigravity
 arc-gtk-theme
 asusctl
 catppuccin-gtk-theme-mocha
+eww
 fsearch
 google-chrome
 grim-hyprland-git

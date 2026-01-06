@@ -6,7 +6,7 @@ import = [
 
 [window]
 opacity = 0.5
-decorations = "None"
+decorations = "full"
 
   [window.padding]
   x = 10
