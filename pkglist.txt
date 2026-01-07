@@ -159,6 +159,7 @@ nano
 nautilus
 ncspot
 neofetch
+neovim
 network-manager-applet
 networkmanager
 networkmanager-dmenu-git
@@ -187,6 +188,9 @@ polkit-kde-agent
 postgresql
 power-profiles-daemon
 ppp
+pyright
+python-black
+python-pynvim
 qbittorrent
 qemu-full
 qt5-wayland
@@ -224,6 +228,7 @@ teams-for-linux
 tecla
 telegram-desktop
 terminus-font
+texlab
 texlive-basic
 texlive-binextra
 texlive-fontsextra
@@ -259,6 +264,7 @@ wireplumber
 wl-clipboard
 wofi
 wvdial
+xclip
 xdg-desktop-portal-gnome
 xdg-desktop-portal-hyprland
 xdg-utils
