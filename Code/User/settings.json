@@ -50,6 +50,11 @@
         "code -r -g \"%{input}:%{line}\"",
         "%PDF%"
     ],
+    "latex-workshop.view.pdf.external.synctex.command": "zathura",
+    "latex-workshop.view.pdf.external.synctex.args": [
+        "--synctex-forward=%LINE%:0:%TEX%",
+        "%PDF%"
+    ],
     "git.openRepositoryInParentFolders": "never",
     "security.workspace.trust.untrustedFiles": "open"
 }
