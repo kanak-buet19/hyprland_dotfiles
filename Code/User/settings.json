@@ -58,5 +58,6 @@
     "git.openRepositoryInParentFolders": "never",
     "security.workspace.trust.untrustedFiles": "open",
     "editor.wordWrap": "on",
-    "workbench.colorTheme": "GitHub Dark Colorblind (Beta)"
+    "workbench.colorTheme": "Quiet Light",
+    "explorer.confirmDelete": false
 }
