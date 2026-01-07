@@ -11,6 +11,7 @@ baobab
 base
 base-devel
 bash-completion
+bc
 bitwarden
 blueman
 bluez
@@ -118,6 +119,7 @@ gvfs-onedrive
 gvfs-smb
 gvfs-wsdd
 htop
+hypridle
 hyprland
 hyprland-relative-workspace-bin
 hyprlock
@@ -201,9 +203,11 @@ qt6ct
 quadrapassel
 quickshell
 qutebrowser
+remmina
 rofi
 rp-pppoe
 rust
+rust-analyzer
 rygel
 satty
 scdoc
@@ -238,6 +242,7 @@ texlive-latexextra
 texlive-mathscience
 texlive-plaingeneric
 thunar
+tigervnc
 timeshift
 timeshift-autosnap
 tk
