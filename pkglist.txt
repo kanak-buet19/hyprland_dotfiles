@@ -45,6 +45,7 @@ endeavour
 epiphany
 eww
 fd
+ffmpegthumbnailer
 file-roller
 firefox
 flatpak
@@ -256,6 +257,7 @@ ttf-hack
 ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
 ttf-ms-fonts
+tumbler
 ueberzugpp
 unzip
 uwsm

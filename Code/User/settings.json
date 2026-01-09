@@ -58,7 +58,6 @@
     "git.openRepositoryInParentFolders": "never",
     "security.workspace.trust.untrustedFiles": "open",
     "editor.wordWrap": "on",
-    "workbench.colorTheme": "monokai-charcoal",
     "explorer.confirmDelete": false,
     "code-runner.executorMap": {
         "javascript": "node",
@@ -123,7 +122,6 @@
     "breadcrumbs.enabled": false,
     "editor.stickyScroll.enabled": false,
     "editor.renderWhitespace": "none",
-    "editor.renderControlCharacters": false,
     "window.titleBarStyle": "native",
     "window.menuBarVisibility": "toggle",
     "editor.padding.top": 15,
@@ -133,7 +131,9 @@
     "workbench.list.smoothScrolling": true,
     "editor.cursorBlinking": "smooth",
     "editor.cursorSmoothCaretAnimation": "on",
-    "workbench.activityBar.location": "top",
-    "window.customTitleBarVisibility": "never",
-    "editor.minimap.size": "fit"
+    "editor.minimap.size": "fit",
+    "workbench.editor.showTabs": "single",
+    "window.zoomLevel": 1,
+    "terminal.integrated.mouseWheelZoom": true,
+    "window.customTitleBarVisibility": "never"
 }
