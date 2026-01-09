@@ -295,6 +295,5 @@ yelp
 zathura
 zathura-pdf-mupdf
 zen-browser-bin
-zoom
 zotero-bin
 zram-generator
