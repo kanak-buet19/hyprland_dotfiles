@@ -58,7 +58,7 @@
     "git.openRepositoryInParentFolders": "never",
     "security.workspace.trust.untrustedFiles": "open",
     "editor.wordWrap": "on",
-    "workbench.colorTheme": "Quiet Light",
+    "workbench.colorTheme": "Visual Studio 2017 Dark - C++",
     "explorer.confirmDelete": false,
     "code-runner.executorMap": {
         "javascript": "node",
@@ -118,5 +118,6 @@
         "spwn": "spwn build",
         "pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
         "gleam": "gleam run -m $fileNameWithoutExt"
-    }
+    },
+    "editor.lineHeight": 1.5
 }

@@ -3,6 +3,7 @@ antigravity
 arc-gtk-theme
 asusctl
 catppuccin-gtk-theme-mocha
+downgrade
 eww
 fsearch
 google-chrome
@@ -20,6 +21,8 @@ teams-for-linux
 timeshift-autosnap
 ttf-ms-fonts
 visual-studio-code-bin
+vmware-keymaps
+vmware-workstation
 waypaper
 yaru-icon-theme
 yay

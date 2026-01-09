@@ -36,6 +36,7 @@ dkms
 dnsmasq
 docker
 dolphin
+downgrade
 dragon
 dunst
 edk2-ovmf
@@ -136,6 +137,7 @@ konsole
 kscreen
 kvantum
 kvantum-theme-materia
+less
 libdvdcss
 libpulse
 libva-nvidia-driver
@@ -228,6 +230,7 @@ swaylock
 swell-foop
 swww
 sysprof
+sysstat
 teams-for-linux
 tecla
 telegram-desktop
@@ -261,6 +264,8 @@ virt-manager
 visual-studio-code-bin
 vlc
 vlc-plugins-all
+vmware-keymaps
+vmware-workstation
 vulkan-radeon
 vulkan-tools
 waybar
