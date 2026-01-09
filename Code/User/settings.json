@@ -58,7 +58,7 @@
     "git.openRepositoryInParentFolders": "never",
     "security.workspace.trust.untrustedFiles": "open",
     "editor.wordWrap": "on",
-    "workbench.colorTheme": "Visual Studio 2017 Dark - C++",
+    "workbench.colorTheme": "monokai-charcoal",
     "explorer.confirmDelete": false,
     "code-runner.executorMap": {
         "javascript": "node",
@@ -119,5 +119,21 @@
         "pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
         "gleam": "gleam run -m $fileNameWithoutExt"
     },
-    "editor.lineHeight": 1.5
+    "editor.lineHeight": 1.5,
+    "breadcrumbs.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "window.titleBarStyle": "native",
+    "window.menuBarVisibility": "toggle",
+    "editor.padding.top": 15,
+    "editor.padding.bottom": 15,
+    "editor.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.activityBar.location": "top",
+    "window.customTitleBarVisibility": "never",
+    "editor.minimap.size": "fit"
 }
