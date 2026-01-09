@@ -5,12 +5,12 @@ import = [
 ]
 
 [window]
-opacity = 1
+opacity = 0.5
 decorations = "full"
 
   [window.padding]
-  x = 10
-  y = 10
+  x = 20
+  y = 20
 
 [font]
 size = 13
