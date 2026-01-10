@@ -1,22 +1,22 @@
 #!/bin/bash
 WINDOW_CLASS="org.telegram.desktop"
-WORKSPACE=13
+SPECIAL_WS="special:telegram"
 
 # Check if Telegram is running
 if ! hyprctl clients -j | jq -e ".[] | select(.class == \"$WINDOW_CLASS\")" > /dev/null; then
-    Telegram &
-    sleep 2  # Wait for it to spawn on workspace 12
+    telegram-desktop &
     exit 0
 fi
 
-# Check current workspace
-CURRENT_WS=$(hyprctl clients -j | jq -r ".[] | select(.class == \"$WINDOW_CLASS\") | .workspace.id")
+# Check current workspace of Telegram
+CURRENT_WS=$(hyprctl clients -j | jq -r ".[] | select(.class == \"$WINDOW_CLASS\") | .workspace.name")
 
-if [ "$CURRENT_WS" = "$WORKSPACE" ]; then
-    # Bring to current workspace
-    hyprctl dispatch movetoworkspacesilent m+0,class:$WINDOW_CLASS
+if [ "$CURRENT_WS" = "$SPECIAL_WS" ]; then
+    # Telegram is in special workspace, bring to active workspace
+    ACTIVE_WS=$(hyprctl activeworkspace -j | jq -r '.id')
+    hyprctl dispatch movetoworkspacesilent $ACTIVE_WS,class:$WINDOW_CLASS
     hyprctl dispatch focuswindow class:$WINDOW_CLASS
 else
-    # Send back to workspace 12
-    hyprctl dispatch movetoworkspacesilent $WORKSPACE,class:$WINDOW_CLASS
+    # Telegram is visible, send back to special workspace
+    hyprctl dispatch movetoworkspacesilent $SPECIAL_WS,class:$WINDOW_CLASS
 fi
