@@ -1,8 +1,8 @@
 [Default Applications]
 image/png=imv.desktop
-text/html=google-chrome.desktop
-x-scheme-handler/http=google-chrome.desktop
-x-scheme-handler/https=google-chrome.desktop
+text/html=zen.desktop
+x-scheme-handler/http=zen.desktop
+x-scheme-handler/https=zen.desktop
 x-scheme-handler/about=google-chrome.desktop
 x-scheme-handler/unknown=google-chrome.desktop
 inode/directory=thunar.desktop
@@ -25,6 +25,13 @@ text/markdown=org.gnome.gedit.desktop
 text/x-log=org.gnome.gedit.desktop
 application/x-wayland-gnome-saved-search=thunar.desktop
 application/x-zerosize=org.gnome.gedit.desktop
+x-scheme-handler/chrome=zen.desktop
+application/x-extension-htm=zen.desktop
+application/x-extension-html=zen.desktop
+application/x-extension-shtml=zen.desktop
+application/xhtml+xml=zen.desktop
+application/x-extension-xhtml=zen.desktop
+application/x-extension-xht=zen.desktop
 
 [Added Associations]
 image/png=imv.desktop;
@@ -35,3 +42,13 @@ text/x-tex=org.gnome.gedit.desktop;
 application/xml=org.gnome.gedit.desktop;
 text/x-python=nvim.desktop;org.gnome.gedit.desktop;
 image/svg+xml=org.inkscape.Inkscape.desktop;
+x-scheme-handler/http=zen.desktop;
+x-scheme-handler/https=zen.desktop;
+x-scheme-handler/chrome=zen.desktop;
+text/html=zen.desktop;
+application/x-extension-htm=zen.desktop;
+application/x-extension-html=zen.desktop;
+application/x-extension-shtml=zen.desktop;
+application/xhtml+xml=zen.desktop;
+application/x-extension-xhtml=zen.desktop;
+application/x-extension-xht=zen.desktop;
