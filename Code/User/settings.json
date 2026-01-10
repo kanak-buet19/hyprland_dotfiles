@@ -132,7 +132,6 @@
     "editor.cursorBlinking": "smooth",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.minimap.size": "fit",
-    "workbench.editor.showTabs": "single",
     "window.zoomLevel": 1,
     "terminal.integrated.mouseWheelZoom": true,
     "window.customTitleBarVisibility": "never",

@@ -24,6 +24,7 @@ visual-studio-code-bin
 vmware-keymaps
 vmware-workstation
 waypaper
+wlogout-git
 yaru-icon-theme
 yay
 yay-debug

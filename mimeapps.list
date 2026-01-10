@@ -28,7 +28,7 @@ application/x-zerosize=org.gnome.gedit.desktop
 
 [Added Associations]
 image/png=imv.desktop;
-application/pdf=org.gnome.Evince.desktop;
+application/pdf=org.gnome.Papers.desktop;org.gnome.Evince.desktop;
 application/x-zerosize=onlyoffice-desktopeditors.desktop;org.gnome.gedit.desktop;
 video/mp4=mpv.desktop;vlc.desktop;org.kde.dragonplayer.desktop;org.kde.haruna.desktop;io.github.celluloid_player.Celluloid.desktop;smplayer.desktop;org.gnome.Showtime.desktop;wine-extension-f4v.desktop;
 text/x-tex=org.gnome.gedit.desktop;

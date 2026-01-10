@@ -28,6 +28,7 @@ chatty
 cmake
 cpio
 cronie
+cups
 d-spy
 dconf-editor
 decibels
@@ -120,6 +121,7 @@ gvfs-nfs
 gvfs-onedrive
 gvfs-smb
 gvfs-wsdd
+hplip
 htop
 hypridle
 hyprland
@@ -277,6 +279,7 @@ wine
 wireless_tools
 wireplumber
 wl-clipboard
+wlogout-git
 wofi
 wvdial
 xclip
