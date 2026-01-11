@@ -134,7 +134,7 @@
     "editor.minimap.size": "fit",
     "window.zoomLevel": 1,
     "terminal.integrated.mouseWheelZoom": true,
-    "window.customTitleBarVisibility": "never",
     "workbench.colorTheme": "GitHub Dark Default",
-    "workbench.activityBar.location": "hidden"
+    "workbench.editor.showTabs": "single",
+    "workbench.statusBar.visible": false
 }

@@ -13,13 +13,17 @@ hyprshell-bin
 hyprworm
 localsend-bin
 lua-cjson
+matugen-bin
 neofetch
 networkmanager-dmenu-git
 onlyoffice-bin
+python-haishoku
+qogir-gtk-theme
 supergfxctl
 teams-for-linux
 timeshift-autosnap
 ttf-ms-fonts
+ventoy-bin
 visual-studio-code-bin
 vmware-keymaps
 vmware-workstation
