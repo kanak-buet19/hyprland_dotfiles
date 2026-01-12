@@ -13,6 +13,7 @@ hyprshell-bin
 hyprworm
 localsend-bin
 lua-cjson
+materia-transparent-gtk-theme-git
 matugen-bin
 neofetch
 networkmanager-dmenu-git

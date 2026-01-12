@@ -127,6 +127,7 @@ hplip
 htop
 hypridle
 hyprland
+hyprland-protocols
 hyprland-relative-workspace-bin
 hyprlock
 hyprshell-bin
@@ -156,6 +157,7 @@ linux-firmware
 linux-headers
 localsend-bin
 loupe
+lsd
 lua-cjson
 lua-lgi
 lua-posix
@@ -163,7 +165,7 @@ lxappearance
 mako
 malcontent
 manuals
-materia-gtk-theme
+materia-transparent-gtk-theme-git
 matugen-bin
 mesa-utils
 meson
@@ -235,6 +237,7 @@ simple-scan
 slurp
 smartmontools
 snapshot
+socat
 sof-firmware
 spectacle
 spotify-launcher

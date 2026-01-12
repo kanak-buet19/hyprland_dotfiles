@@ -134,7 +134,14 @@
     "editor.minimap.size": "fit",
     "window.zoomLevel": 1,
     "terminal.integrated.mouseWheelZoom": true,
-    "workbench.colorTheme": "GitHub Dark Default",
     "workbench.editor.showTabs": "single",
-    "workbench.statusBar.visible": false
+    "workbench.statusBar.visible": false,
+    "animations.Install-Method": "Apc Customize UI++",
+    "apc.imports": [
+        "file://${userHome}/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+    ],
+    "workbench.colorTheme": "GitHub Dark Default",
+    
+
+    
 }
