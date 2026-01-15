@@ -32,6 +32,7 @@ application/x-extension-shtml=zen.desktop
 application/xhtml+xml=zen.desktop
 application/x-extension-xhtml=zen.desktop
 application/x-extension-xht=zen.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-KGR8I3.desktop
 
 [Added Associations]
 image/png=imv.desktop;
@@ -54,3 +55,4 @@ application/x-extension-xhtml=zen.desktop;
 application/x-extension-xht=zen.desktop;
 application/x-shellscript=org.gnome.gedit.desktop;nvim.desktop;
 text/plain=org.gnome.gedit.desktop;org.gnome.TextEditor.desktop;nvim.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-KGR8I3.desktop;

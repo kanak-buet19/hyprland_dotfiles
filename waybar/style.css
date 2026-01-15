@@ -8,13 +8,12 @@
     min-height: 0;
 }
 
-
-
-
 window#waybar {
-    background: transparent; /* <--- This makes the empty space invisible */
+    background: transparent;
     color: @on_surface;
+    margin: 0 0; /* Creates gap at top and bottom */
 }
+
 tooltip {
     background: @surface_container;
     border-radius: 8px;
@@ -30,13 +29,11 @@ tooltip label {
     padding: 0 4px;
     margin: 0;
     min-height: 0;
-    color: @on_surface_variant; /* Grey-ish text */
+    color: @on_surface_variant;
     background: transparent;
     border-radius: 6px;
     transition: all 0.2s ease;
 }
-
-
 
 #workspaces button:hover {
     background: @surface_bright;
@@ -44,20 +41,16 @@ tooltip label {
 }
 
 #workspaces button.active {
-    /* The active workspace now uses your main wallpaper color */
     background: @primary;
     color: @on_primary;
 }
 
-/* <---- PASTE THE NEW CODE HERE  */
 #hardware, #tools {
-    background-color: @surface_container;
-    margin: 0px 4px;       /* <--- Change 4px to 0px (or 1px) */
-    padding: 0 10px;       /* Keep vertical padding at 0 */
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0px 4px;
+    padding: 0 10px;
     border-radius: 15px;
 }
-/* <---- END OF PASTE  */
-
 
 #clock,
 #battery,
@@ -70,10 +63,6 @@ tooltip label {
     margin: 0;
     min-height: 0;
 }
-
-/* Here we map your modules to different dynamic colors 
-   generated from the wallpaper (primary, secondary, tertiary, etc.)
-*/
 
 #clock {
     color: @primary;
@@ -88,7 +77,7 @@ tooltip label {
 }
 
 #network {
-    color: @error; /* Often a reddish/orange color */
+    color: @error;
 }
 
 #cpu {

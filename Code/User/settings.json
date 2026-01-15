@@ -135,7 +135,6 @@
     "window.zoomLevel": 1,
     "terminal.integrated.mouseWheelZoom": true,
     "workbench.editor.showTabs": "single",
-    "workbench.statusBar.visible": false,
     "animations.Install-Method": "Apc Customize UI++",
     "apc.imports": [
         "file://${userHome}/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
@@ -146,6 +145,8 @@
     "code-runner.clearPreviousOutput": true,
     "code-runner.runInTerminal": true,
     "extensions.ignoreRecommendations": true,
+    "workbench.activityBar.location": "bottom",
+    "window.customTitleBarVisibility": "never",
 
 
     

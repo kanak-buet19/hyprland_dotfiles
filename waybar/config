@@ -1,8 +1,8 @@
 {
     "position": "bottom",
     "height": 17,
-    "modules-left": ["clock"],
-    "modules-center": ["hyprland/workspaces"], 
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"], 
     "modules-right": ["network", "pulseaudio", "cpu", "memory", "disk", "battery"],
     
 "hyprland/workspaces": {

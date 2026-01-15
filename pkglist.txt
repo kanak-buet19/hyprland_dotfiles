@@ -1,5 +1,6 @@
 adapta-gtk-theme
 adobe-source-code-pro-fonts
+adw-gtk-theme
 alacritty
 alacritty-themes
 amd-ucode
