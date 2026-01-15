@@ -23,6 +23,7 @@ qogir-gtk-theme
 supergfxctl
 teams-for-linux
 timeshift-autosnap
+tor-browser-bin
 ttf-ms-fonts
 ventoy-bin
 visual-studio-code-bin

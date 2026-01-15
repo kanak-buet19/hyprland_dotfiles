@@ -1,10 +1,10 @@
 [Default Applications]
 image/png=imv.desktop
-text/html=zen.desktop
-x-scheme-handler/http=zen.desktop
-x-scheme-handler/https=zen.desktop
-x-scheme-handler/about=google-chrome.desktop
-x-scheme-handler/unknown=google-chrome.desktop
+text/html=firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/about=firefox.desktop
+x-scheme-handler/unknown=firefox.desktop
 inode/directory=thunar.desktop
 application/x-gnome-saved-search=thunar.desktop
 image/jpeg=imv.desktop
@@ -35,7 +35,7 @@ application/x-extension-xht=zen.desktop
 
 [Added Associations]
 image/png=imv.desktop;
-application/pdf=org.gnome.Papers.desktop;org.gnome.Evince.desktop;
+application/pdf=okularApplication_pdf.desktop;org.gnome.Papers.desktop;org.gnome.Evince.desktop;
 application/x-zerosize=onlyoffice-desktopeditors.desktop;org.gnome.gedit.desktop;
 video/mp4=mpv.desktop;vlc.desktop;org.kde.dragonplayer.desktop;org.kde.haruna.desktop;io.github.celluloid_player.Celluloid.desktop;smplayer.desktop;org.gnome.Showtime.desktop;wine-extension-f4v.desktop;
 text/x-tex=org.gnome.gedit.desktop;

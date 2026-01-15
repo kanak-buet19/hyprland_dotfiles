@@ -141,6 +141,13 @@
         "file://${userHome}/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
     ],
     "workbench.colorTheme": "GitHub Dark Default",
+    "makefile.configureOnOpen": true,
+    "debug.terminal.clearBeforeReusing": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.runInTerminal": true,
+    "extensions.ignoreRecommendations": true,
+
+
     
 
     

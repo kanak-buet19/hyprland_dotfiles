@@ -46,6 +46,7 @@ endeavour
 epiphany
 eww
 eza
+fastfetch
 fd
 ffmpegthumbnailer
 file-roller
@@ -189,6 +190,8 @@ nvidia-open-dkms
 nwg-dock-hyprland
 nwg-look
 obs-studio
+obsidian
+okular
 onlyoffice-bin
 orca
 orchis-theme
@@ -220,7 +223,6 @@ qt6-wayland
 qt6ct
 quadrapassel
 quickshell
-qutebrowser
 remmina
 ristretto
 rofi
@@ -271,6 +273,7 @@ tigervnc
 timeshift
 timeshift-autosnap
 tk
+tor-browser-bin
 tree
 ttf-cascadia-code
 ttf-fira-code
