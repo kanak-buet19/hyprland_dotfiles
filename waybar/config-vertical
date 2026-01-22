@@ -1,6 +1,6 @@
 {
-    "position": "bottom",
-    "height": 17,
+    "position": "left",
+    "width": 32,
     "modules-left": [
         "hyprland/workspaces"
     ],
@@ -10,34 +10,34 @@
     "modules-right": [
         "network",
         "group/audio",
-        "custom/separator",
         "group/backlight",
-        "group/hardware",
+        "custom/system",
         "battery"
     ],
     "custom/separator": {
-        "format": "|",
-        "tooltip": false
+        "format": "—",
+        "tooltip": false,
+        "rotate": 0
     },
     "group/backlight": {
-        "orientation": "horizontal",
+        "orientation": "vertical",
         "drawer": {
             "transition-duration": 500,
             "children-class": "backlight-slider-child",
-            "transition-left-to-right": false
+            "transition-left-to-right": true
         },
         "modules": [
             "backlight",
             "backlight/slider"
         ]
     },
-    "group/hardware": {
-        "orientation": "horizontal",
-        "modules": [
-            "cpu",
-            "memory",
-            "disk"
-        ]
+    "custom/system": {
+        "format": "{}",
+        "return-type": "json",
+        "interval": 5,
+        "exec": "~/.config/waybar/scripts/system_stats.sh",
+        "on-click": "alacritty -e btop",
+        "tooltip": true
     },
     "hyprland/workspaces": {
         "all-outputs": false,
@@ -64,40 +64,26 @@
         "icon-size": 16,
         "tooltip-format": "{title}",
         "on-click": "activate",
-        "on-click-middle": "close"
+        "on-click-middle": "close",
+        "rotate": 0
     },
     "clock": {
-        "format": "{:%d %b  %I:%M %p}",
-        "tooltip-format": "{calendar}",
+        "format": "",
+        "tooltip-format": "{:%I:%M %p\n%A, %B %d, %Y}\n{calendar}",
         "on-click": "xdg-open https://calendar.google.com",
         "calendar": {
             "format": {
                 "today": "<b><u>{}</u></b>"
             }
-        }
-    },
-    "cpu": {
-        "interval": 5,
-        "format": "CPU {usage}%",
-        "on-click": "alacritty -e btop"
-    },
-    "memory": {
-        "interval": 5,
-        "format": "RAM {percentage}%",
-        "tooltip-format": "{used:0.1f}G / {total:0.1f}G used"
-    },
-    "disk": {
-        "interval": 30,
-        "format": "Disk {percentage_used}%",
-        "path": "/",
-        "tooltip-format": "{used} / {total} used"
+        },
+        "rotate": 0
     },
     "group/audio": {
-        "orientation": "horizontal",
+        "orientation": "vertical",
         "drawer": {
             "transition-duration": 500,
             "children-class": "audio-slider-child",
-            "transition-left-to-right": false
+            "transition-left-to-right": true
         },
         "modules": [
             "pulseaudio",
@@ -106,15 +92,17 @@
     },
     "network": {
         "interval": 2,
-        "format-wifi": "󰖩 {essid}",
-        "format-ethernet": "󰀂 {ifname}",
+        "format-wifi": "󰖩",
+        "format-ethernet": "󰀂",
         "format-disconnected": "󰖪",
         "tooltip-format-wifi": "{essid} ({signalStrength}%)\n {bandwidthDownBits}  {bandwidthUpBits}",
         "tooltip-format-ethernet": "{ifname}\n {bandwidthDownBits}  {bandwidthUpBits}",
-        "on-click": "alacritty -e nmtui"
+        "on-click": "alacritty -e nmtui",
+        "rotate": 0
     },
     "pulseaudio": {
-        "format": "{icon} {volume}%",
+        "format": "{icon}",
+        "tooltip-format": "{volume}%",
         "format-muted": "󰝟",
         "format-icons": [
             "󰕿",
@@ -122,15 +110,17 @@
             "󰕾"
         ],
         "on-click": "pavucontrol",
-        "on-click-right": "wpctl set-mute @DEFAULT_SINK@ toggle"
+        "on-click-right": "wpctl set-mute @DEFAULT_SINK@ toggle",
+        "rotate": 0
     },
     "pulseaudio/slider": {
         "min": 0,
         "max": 100,
-        "orientation": "horizontal"
+        "orientation": "vertical"
     },
     "backlight": {
-        "format": "{icon} {percent}%",
+        "format": "{icon}",
+        "tooltip-format": "{percent}%",
         "format-icons": [
             "",
             "",
@@ -143,16 +133,17 @@
             ""
         ],
         "on-scroll-up": "brightnessctl set 1%+",
-        "on-scroll-down": "brightnessctl set 1%-"
+        "on-scroll-down": "brightnessctl set 1%-",
+        "rotate": 0
     },
     "backlight/slider": {
         "min": 0,
         "max": 100,
-        "orientation": "horizontal"
+        "orientation": "vertical"
     },
     "battery": {
-        "format": "{icon} {capacity}%",
-        "format-charging": "󰂄 {capacity}%",
+        "format": "{icon}",
+        "format-charging": "󰂄",
         "format-icons": [
             "󰂎",
             "󰁺",
@@ -171,6 +162,7 @@
         "states": {
             "warning": 35,
             "critical": 10
-        }
+        },
+        "rotate": 0
     }
 }

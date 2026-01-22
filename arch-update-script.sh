@@ -25,7 +25,8 @@ fi
 # Function to check if package is old enough
 check_package_age() {
     local pkg=$1
-    local build_date=$(pacman -Si "$pkg" 2>/dev/null | grep "Build Date" | cut -d':' -f2- | xargs)
+    # Force LANG=C to ensure standard date format (e.g. "Build Date : ...")
+    local build_date=$(LANG=C pacman -Si "$pkg" 2>/dev/null | grep "Build Date" | cut -d':' -f2- | xargs)
     
     if [[ -z "$build_date" ]]; then
         echo "unknown"
@@ -34,6 +35,12 @@ check_package_age() {
     
     local build_epoch=$(date -d "$build_date" +%s 2>/dev/null)
     local current_epoch=$(date +%s)
+
+    if [[ -z "$build_epoch" || "$build_epoch" -eq 0 ]]; then
+        echo "unknown"
+        return 1
+    fi
+
     local age_days=$(( (current_epoch - build_epoch) / 86400 ))
     
     echo "$age_days"
@@ -87,16 +94,22 @@ if [[ ! $REPLY =~ ^[Yy]$ ]]; then
 fi
 
 # Step 2: Create Timeshift Snapshot
-echo -e "\n${YELLOW}[2/7] Creating Timeshift Snapshot...${NC}"
+
+echo -e "\n${YELLOW}[2/7] Creating Snapper Snapshot...${NC}"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
-if ! command -v timeshift &> /dev/null; then
-    echo -e "${RED}Timeshift not installed! Install it first: sudo pacman -S timeshift${NC}"
+# if ! command -v timeshift &> /dev/null; then
+#     echo -e "${RED}Timeshift not installed! Install it first: sudo pacman -S timeshift${NC}"
+#     exit 1
+# fi
+
+if ! command -v snapper &> /dev/null; then
+    echo -e "${RED}Snapper not installed! Install it: sudo pacman -S snapper${NC}"
     exit 1
 fi
 
 echo "Creating pre-update snapshot..."
-sudo timeshift --create --comments "Pre-update $(date +%Y-%m-%d_%H:%M)" --tags D
+sudo snapper -c root create --description "Pre-update $(date +%Y-%m-%d_%H:%M)" --type pre
 
 if [[ $? -ne 0 ]]; then
     echo -e "${RED}Snapshot creation failed! Aborting update.${NC}"
@@ -105,8 +118,8 @@ fi
 
 echo -e "${GREEN}✓ Snapshot created successfully${NC}"
 
-# Step 3: Check available updates
-echo -e "\n${YELLOW}[3/7] Checking Available Updates...${NC}"
+# Step 3: Check, Analyze & List Updates
+echo -e "\n${YELLOW}[3/7] Checking Available Updates & Package Ages...${NC}"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
 if command -v checkupdates &> /dev/null; then
@@ -120,60 +133,85 @@ if [[ -z "$UPDATES" ]]; then
     exit 0
 fi
 
-echo "$UPDATES"
 UPDATE_COUNT=$(echo "$UPDATES" | wc -l)
-echo -e "\n${BLUE}Total updates available: $UPDATE_COUNT${NC}"
+echo -e "${BLUE}Found $UPDATE_COUNT updates. analyzing...${NC}\n"
 
-# Step 4: Analyze critical packages
-echo -e "\n${YELLOW}[4/7] Analyzing Critical Packages...${NC}"
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+# Table Header
+printf "${BLUE}%-30s %-25s %-15s %s${NC}\n" "Package" "Version" "Age" "Status"
+echo "--------------------------------------------------------------------------------"
 
 CRITICAL_UPDATES=()
+YOUNG_PACKAGES=()
 REBOOT_NEEDED=false
 
-for pkg in "${CRITICAL_PACKAGES[@]}"; do
-    if echo "$UPDATES" | grep -q "^$pkg "; then
-        CRITICAL_UPDATES+=("$pkg")
-        echo -e "${RED}⚠ Critical: $pkg${NC}"
-        
-        if [[ "$pkg" == "linux" || "$pkg" == "nvidia"* || "$pkg" == "systemd" ]]; then
-            REBOOT_NEEDED=true
+while IFS= read -r line; do
+    # checkupdates output format: package old_ver -> new_ver
+    # We need to handle potential parsing differences if using pacman -Qu
+    
+    pkg_name=$(echo "$line" | awk '{print $1}')
+    # Extract version info if available in "old -> new" format (standard for checkupdates)
+    version_info=$(echo "$line" | awk '{$1=""; print $0}' | xargs)
+    
+    # Calculate age
+    age=$(check_package_age "$pkg_name")
+    
+    status_str=""
+    age_str=""
+    
+    # Check Critical
+    is_crit=false
+    for cpkg in "${CRITICAL_PACKAGES[@]}"; do
+        if [[ "$pkg_name" == "$cpkg" ]]; then
+            is_crit=true
+            CRITICAL_UPDATES+=("$pkg_name")
+            if [[ "$pkg_name" == "linux" || "$pkg_name" == "nvidia"* || "$pkg_name" == "systemd" ]]; then
+                REBOOT_NEEDED=true
+            fi
+            break
         fi
+    done
+    
+    # Check Age
+    is_young=false
+    if [[ "$age" =~ ^[0-9]+$ ]]; then
+        age_str="${age} days"
+        if [[ $age -lt $MIN_PACKAGE_AGE_DAYS ]]; then
+            is_young=true
+            YOUNG_PACKAGES+=("$pkg_name")
+        fi
+    else
+        age_str="unknown"
     fi
-done
+    
+    # Format Output
+    if [[ "$is_crit" == true ]]; then
+        status_str="${RED}CRITICAL${NC}"
+    fi
+    
+    if [[ "$is_young" == true ]]; then
+        if [[ -n "$status_str" ]]; then status_str+=", "; fi
+        status_str+="${YELLOW}FRESH${NC}"
+    elif [[ -z "$status_str" ]]; then
+         status_str="${GREEN}OK${NC}"
+    fi
 
-if [[ ${#CRITICAL_UPDATES[@]} -eq 0 ]]; then
-    echo -e "${GREEN}✓ No critical packages in this update${NC}"
-else
+    printf "%-30s %-25s %-15s %b\n" "$pkg_name" "${version_info:0:24}" "$age_str" "$status_str"
+
+done <<< "$UPDATES"
+
+if [[ ${#CRITICAL_UPDATES[@]} -gt 0 ]]; then
     echo -e "\n${RED}⚠ WARNING: ${#CRITICAL_UPDATES[@]} critical package(s) will be updated${NC}"
     if [[ "$REBOOT_NEEDED" == true ]]; then
         echo -e "${RED}⚠ REBOOT WILL BE REQUIRED after update${NC}"
     fi
+else
+    echo -e "\n${GREEN}✓ No critical packages in this update${NC}"
 fi
 
-# Step 5: Check package ages
-echo -e "\n${YELLOW}[5/7] Checking Package Stability (Age Check)...${NC}"
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "Packages newer than $MIN_PACKAGE_AGE_DAYS days are flagged as potentially unstable"
-echo ""
-
-YOUNG_PACKAGES=()
-while IFS= read -r line; do
-    pkg_name=$(echo "$line" | awk '{print $1}')
-    age=$(check_package_age "$pkg_name")
-    
-    if [[ "$age" =~ ^[0-9]+$ ]]; then
-        if [[ $age -lt $MIN_PACKAGE_AGE_DAYS ]]; then
-            YOUNG_PACKAGES+=("$pkg_name")
-            echo -e "${YELLOW}⚠ $pkg_name (${age}d old - FRESH)${NC}"
-        fi
-    fi
-done <<< "$UPDATES"
-
-if [[ ${#YOUNG_PACKAGES[@]} -eq 0 ]]; then
-    echo -e "${GREEN}✓ All packages are at least $MIN_PACKAGE_AGE_DAYS days old${NC}"
+if [[ ${#YOUNG_PACKAGES[@]} -gt 0 ]]; then
+    echo -e "${YELLOW}found ${#YOUNG_PACKAGES[@]} recently updated (fresh) package(s)${NC}"
 else
-    echo -e "\n${YELLOW}Found ${#YOUNG_PACKAGES[@]} recently updated package(s)${NC}"
+    echo -e "${GREEN}✓ All packages are at least $MIN_PACKAGE_AGE_DAYS days old${NC}"
 fi
 
 # Step 6: Show recommendations
@@ -277,7 +315,8 @@ if [[ $? -eq 0 ]]; then
 else
     echo -e "\n${RED}✗ Update failed!${NC}"
     echo "Your system is unchanged thanks to the snapshot."
-    echo "To restore: sudo timeshift --restore"
+    echo "To restore: sudo snapper -c root rollback"
+    echo "Or list snapshots: sudo snapper -c root list"
     exit 1
 fi
 

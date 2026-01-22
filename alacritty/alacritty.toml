@@ -6,7 +6,7 @@ import = [
 
 [window]
 opacity = 0.5
-decorations = "full"
+decorations = "none"
 
   [window.padding]
   x = 20
@@ -16,8 +16,9 @@ decorations = "full"
 size = 13
 
   [font.normal]
-  family = "JetBrains Mono"
+  family = "JetBrainsMono Nerd Font Mono"
   style = "Regular"
+
 
 
 [selection]

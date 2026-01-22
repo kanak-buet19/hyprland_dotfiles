@@ -5,7 +5,7 @@
     "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
     "editor.fontSize": 14,
     "editor.fontLigatures": true,
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "icons",
     // LaTeX Workshop settings
     "latex-workshop.latex.outDir": "./build/%DOCFILE%",
     "latex-workshop.latex.autoBuild.run": "onSave",
@@ -134,19 +134,21 @@
     "editor.minimap.size": "fit",
     "window.zoomLevel": 1,
     "terminal.integrated.mouseWheelZoom": true,
-    "workbench.editor.showTabs": "single",
     "animations.Install-Method": "Apc Customize UI++",
     "apc.imports": [
         "file://${userHome}/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
     ],
-    "workbench.colorTheme": "GitHub Dark Default",
     "makefile.configureOnOpen": true,
     "debug.terminal.clearBeforeReusing": true,
     "code-runner.clearPreviousOutput": true,
     "code-runner.runInTerminal": true,
     "extensions.ignoreRecommendations": true,
-    "workbench.activityBar.location": "bottom",
+    "workbench.activityBar.location": "top",
+    "workbench.colorTheme": "Github Purple",
     "window.customTitleBarVisibility": "never",
+    "workbench.editor.showTabs": "single",
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.statusBar.visible": false,
 
 
     

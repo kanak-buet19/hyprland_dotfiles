@@ -1,0 +1,123 @@
+/* 1. IMPORT THE GENERATED COLORS */
+@import "colors.css";
+
+* {
+    font-family: "Ubuntu Nerd Font", "JetBrainsMono Nerd Font", "Symbols Nerd Font", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    min-height: 0;
+}
+
+window#waybar {
+    background: @surface;
+    border: 2px solid @primary;
+    color: @on_surface;
+    margin: 10px;
+    /* Floating "Island" look */
+    border-radius: 20px;
+    /* Rounded pill shape */
+    /* Vertical Mode */
+}
+
+tooltip {
+    background: @surface_container;
+    border-radius: 8px;
+    border: 1px solid @outline;
+}
+
+tooltip label {
+    padding: 0px 8px;
+    color: @on_surface;
+}
+
+#workspaces {
+    margin: 0;
+    padding: 0;
+}
+
+#workspaces button {
+    padding: 4px 1px;
+    /* Vertical padding inverted */
+    min-width: 0;
+    margin: 0;
+    min-height: 0;
+    color: @on_surface_variant;
+    background: transparent;
+    border-radius: 0px;
+    border: none;
+    box-shadow: none;
+    transition: all 0.2s ease;
+}
+
+#workspaces button:hover {
+    background: @surface_bright;
+    color: @on_surface;
+}
+
+#workspaces button.active {
+    background: @primary;
+    color: @on_primary;
+    padding: 4px 1px;
+    /* Vertical padding inverted */
+    margin: 0;
+    border: none;
+    box-shadow: none;
+}
+
+#workspaces button label {
+    padding: 0;
+    margin: 0;
+    min-height: 0;
+}
+
+#hardware,
+#tools {
+    background-color: transparent;
+    margin: 4px 0px;
+    /* Vertical margins */
+    padding: 10px 0;
+    /* Vertical padding */
+    border-radius: 15px;
+}
+
+/* Standardized Icon Styling */
+#network,
+#pulseaudio,
+#backlight,
+#custom-system,
+#battery,
+#clock {
+    font-size: 16px;
+    /* Consistent icon size */
+    padding: 4px 0;
+    /* Reduced vertical padding */
+    margin: 0;
+    min-height: 0;
+    background-color: transparent;
+}
+
+#clock {
+    color: @primary;
+    font-size: 18px;
+    /* Clock icon slightly larger */
+}
+
+#battery {
+    color: @tertiary;
+}
+
+#pulseaudio {
+    color: @secondary;
+}
+
+#network {
+    color: @error;
+}
+
+#custom-system {
+    color: @primary;
+}
+
+/* Remove individual inconsistent blocks if they exist below, 
+   but since we are replacing the bottom chunk, this is fine. 
+   We just need to make sure we don't have duplicates. */
