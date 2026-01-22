@@ -1,23 +1,24 @@
 #!/bin/bash
-
-# Get current workspace ID
 WS_ID=$(hyprctl activeworkspace -j | jq '.id')
 STATE_FILE="/tmp/hypr_layout_ws_${WS_ID}"
 
-# Read current state (Default to 'dwindle' if no file exists)
-if [ ! -f "$STATE_FILE" ]; then
-    CURRENT="dwindle"
+WINDOWS=$(hyprctl clients -j | jq -r ".[] | select(.workspace.id == $WS_ID) | .class")
+HAS_VSCODE=$(echo "$WINDOWS" | grep -iq "code" && echo "yes" || echo "no")
+HAS_ZATHURA=$(echo "$WINDOWS" | grep -iq "zathura" && echo "yes" || echo "no")
+
+if [ "$HAS_VSCODE" = "yes" ] && [ "$HAS_ZATHURA" = "yes" ]; then
+    INITIAL="dwindle"
 else
-    CURRENT=$(cat "$STATE_FILE")
+    INITIAL="master"
 fi
 
-# Toggle Logic
-if [ "$CURRENT" == "dwindle" ]; then
-    hyprctl dispatch layoutmsg setlayout master
-    notify-send -t 1000 "Layout" "Switched to Master"
-    echo "master" > "$STATE_FILE"
+if [ ! -f "$STATE_FILE" ]; then
+    LAYOUT="$INITIAL"
 else
-    hyprctl dispatch layoutmsg setlayout dwindle
-    notify-send -t 1000 "Layout" "Switched to Dwindle"
-    echo "dwindle" > "$STATE_FILE"
+    CURRENT=$(cat "$STATE_FILE")
+    [ "$CURRENT" = "master" ] && LAYOUT="dwindle" || LAYOUT="master"
 fi
+
+hyprctl dispatch layoutmsg setlayout "$LAYOUT"
+notify-send -t 1000 "WS$WS_ID" "$LAYOUT"
+echo "$LAYOUT" > "$STATE_FILE"
