@@ -119,11 +119,8 @@
         "gleam": "gleam run -m $fileNameWithoutExt"
     },
     "editor.lineHeight": 1.5,
-    "breadcrumbs.enabled": false,
     "editor.stickyScroll.enabled": false,
     "editor.renderWhitespace": "none",
-    "window.titleBarStyle": "native",
-    "window.menuBarVisibility": "toggle",
     "editor.padding.top": 15,
     "editor.padding.bottom": 15,
     "editor.smoothScrolling": true,
@@ -143,12 +140,9 @@
     "code-runner.clearPreviousOutput": true,
     "code-runner.runInTerminal": true,
     "extensions.ignoreRecommendations": true,
-    "workbench.activityBar.location": "top",
-    "workbench.colorTheme": "Github Purple",
-    "window.customTitleBarVisibility": "never",
-    "workbench.editor.showTabs": "single",
     "workbench.editor.empty.hint": "hidden",
-    "workbench.statusBar.visible": false,
+    "terminal.integrated.initialHint": false,
+    "workbench.editor.editorActionsLocation": "hidden",
 
 
     

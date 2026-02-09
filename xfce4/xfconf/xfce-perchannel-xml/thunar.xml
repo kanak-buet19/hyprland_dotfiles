@@ -3,14 +3,14 @@
 <channel name="thunar" version="1.0">
   <property name="last-view" type="string" value="ThunarDetailsView"/>
   <property name="last-icon-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_100_PERCENT"/>
-  <property name="last-window-maximized" type="bool" value="true"/>
+  <property name="last-window-maximized" type="bool" value="false"/>
   <property name="last-separator-position" type="int" value="183"/>
   <property name="misc-single-click" type="bool" value="false"/>
   <property name="last-location-bar" type="string" value="ThunarLocationButtons"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_50_PERCENT"/>
-  <property name="last-details-view-column-widths" type="string" value="50,50,118,50,50,50,50,50,301,50,50,69,50,228"/>
-  <property name="last-show-hidden" type="bool" value="true"/>
-  <property name="last-sort-column" type="string" value="THUNAR_COLUMN_TYPE"/>
+  <property name="last-details-view-column-widths" type="string" value="50,50,127,113,50,50,50,50,1227,50,50,58,50,63"/>
+  <property name="last-show-hidden" type="bool" value="false"/>
+  <property name="last-sort-column" type="string" value="THUNAR_COLUMN_NAME"/>
   <property name="last-sort-order" type="string" value="GTK_SORT_ASCENDING"/>
   <property name="misc-text-beside-icons" type="bool" value="false"/>
   <property name="shortcuts-icon-size" type="string" value="THUNAR_ICON_SIZE_32"/>
@@ -19,7 +19,8 @@
   <property name="misc-symbolic-icons-in-sidepane" type="bool" value="false"/>
   <property name="last-side-pane" type="string" value="THUNAR_SIDEPANE_TYPE_SHORTCUTS"/>
   <property name="last-image-preview-visible" type="bool" value="true"/>
-  <property name="last-window-width" type="int" value="960"/>
-  <property name="last-window-height" type="int" value="1008"/>
+  <property name="last-window-width" type="int" value="1659"/>
+  <property name="last-window-height" type="int" value="1320"/>
   <property name="misc-thumbnail-mode" type="string" value="THUNAR_THUMBNAIL_MODE_ALWAYS"/>
+  <property name="last-renamer-dialog-maximized" type="bool" value="true"/>
 </channel>

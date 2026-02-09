@@ -55,7 +55,7 @@ docker run -d --name windows \
 
 echo ""
 echo "Waiting for Windows to boot..."
-sleep 15
+sleep 45
 
 echo "Connecting via RDP..."
 xfreerdp3 /v:localhost:3389 /u:Docker /p:admin /cert:ignore /dynamic-resolution +clipboard

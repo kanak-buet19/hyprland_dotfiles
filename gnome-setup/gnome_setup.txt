@@ -1,0 +1,564 @@
+--- KEYBOARD SHORTCUTS ---
+org.gnome.settings-daemon.plugins.media-keys battery-status ['']
+org.gnome.settings-daemon.plugins.media-keys battery-status-static ['XF86Battery']
+org.gnome.settings-daemon.plugins.media-keys calculator ['']
+org.gnome.settings-daemon.plugins.media-keys calculator-static ['XF86Calculator']
+org.gnome.settings-daemon.plugins.media-keys control-center ['']
+org.gnome.settings-daemon.plugins.media-keys control-center-static ['XF86Tools']
+org.gnome.settings-daemon.plugins.media-keys custom-keybindings ['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']
+org.gnome.settings-daemon.plugins.media-keys decrease-text-size ['']
+org.gnome.settings-daemon.plugins.media-keys eject ['']
+org.gnome.settings-daemon.plugins.media-keys eject-static ['XF86Eject']
+org.gnome.settings-daemon.plugins.media-keys email ['']
+org.gnome.settings-daemon.plugins.media-keys email-static ['XF86Mail']
+org.gnome.settings-daemon.plugins.media-keys help ['', '<Super>F1']
+org.gnome.settings-daemon.plugins.media-keys hibernate ['']
+org.gnome.settings-daemon.plugins.media-keys hibernate-static ['XF86Suspend', 'XF86Hibernate']
+org.gnome.settings-daemon.plugins.media-keys home ['']
+org.gnome.settings-daemon.plugins.media-keys home-static ['XF86Explorer']
+org.gnome.settings-daemon.plugins.media-keys increase-text-size ['']
+org.gnome.settings-daemon.plugins.media-keys keyboard-brightness-down ['']
+org.gnome.settings-daemon.plugins.media-keys keyboard-brightness-down-static ['XF86KbdBrightnessDown']
+org.gnome.settings-daemon.plugins.media-keys keyboard-brightness-toggle ['']
+org.gnome.settings-daemon.plugins.media-keys keyboard-brightness-toggle-static ['XF86KbdLightOnOff']
+org.gnome.settings-daemon.plugins.media-keys keyboard-brightness-up ['']
+org.gnome.settings-daemon.plugins.media-keys keyboard-brightness-up-static ['XF86KbdBrightnessUp']
+org.gnome.settings-daemon.plugins.media-keys logout ['<Control><Alt>Delete']
+org.gnome.settings-daemon.plugins.media-keys magnifier ['<Alt><Super>8']
+org.gnome.settings-daemon.plugins.media-keys magnifier-zoom-in ['<Alt><Super>equal']
+org.gnome.settings-daemon.plugins.media-keys magnifier-zoom-out ['<Alt><Super>minus']
+org.gnome.settings-daemon.plugins.media-keys media ['']
+org.gnome.settings-daemon.plugins.media-keys media-static ['XF86AudioMedia']
+org.gnome.settings-daemon.plugins.media-keys mic-mute ['']
+org.gnome.settings-daemon.plugins.media-keys mic-mute-static ['XF86AudioMicMute']
+org.gnome.settings-daemon.plugins.media-keys next ['']
+org.gnome.settings-daemon.plugins.media-keys next-static ['XF86AudioNext', '<Ctrl>XF86AudioNext']
+org.gnome.settings-daemon.plugins.media-keys on-screen-keyboard ['']
+org.gnome.settings-daemon.plugins.media-keys pause ['']
+org.gnome.settings-daemon.plugins.media-keys pause-static ['XF86AudioPause']
+org.gnome.settings-daemon.plugins.media-keys play ['']
+org.gnome.settings-daemon.plugins.media-keys play-static ['XF86AudioPlay', '<Ctrl>XF86AudioPlay']
+org.gnome.settings-daemon.plugins.media-keys playback-forward ['']
+org.gnome.settings-daemon.plugins.media-keys playback-forward-static ['XF86AudioForward']
+org.gnome.settings-daemon.plugins.media-keys playback-random ['']
+org.gnome.settings-daemon.plugins.media-keys playback-random-static ['XF86AudioRandomPlay']
+org.gnome.settings-daemon.plugins.media-keys playback-repeat ['']
+org.gnome.settings-daemon.plugins.media-keys playback-repeat-static ['XF86AudioRepeat']
+org.gnome.settings-daemon.plugins.media-keys playback-rewind ['']
+org.gnome.settings-daemon.plugins.media-keys playback-rewind-static ['XF86AudioRewind']
+org.gnome.settings-daemon.plugins.media-keys power ['']
+org.gnome.settings-daemon.plugins.media-keys power-static ['XF86PowerOff']
+org.gnome.settings-daemon.plugins.media-keys previous ['']
+org.gnome.settings-daemon.plugins.media-keys previous-static ['XF86AudioPrev', '<Ctrl>XF86AudioPrev']
+org.gnome.settings-daemon.plugins.media-keys reboot ['']
+org.gnome.settings-daemon.plugins.media-keys rfkill ['']
+org.gnome.settings-daemon.plugins.media-keys rfkill-bluetooth ['']
+org.gnome.settings-daemon.plugins.media-keys rfkill-bluetooth-static ['XF86Bluetooth']
+org.gnome.settings-daemon.plugins.media-keys rfkill-static ['XF86WLAN', 'XF86UWB', 'XF86RFKill']
+org.gnome.settings-daemon.plugins.media-keys rotate-video-lock ['']
+org.gnome.settings-daemon.plugins.media-keys rotate-video-lock-static ['<Super>o', 'XF86RotationLockToggle']
+org.gnome.settings-daemon.plugins.media-keys screenreader ['<Alt><Super>s']
+org.gnome.settings-daemon.plugins.media-keys screensaver ['<Super>l']
+org.gnome.settings-daemon.plugins.media-keys screensaver-static ['XF86ScreenSaver']
+org.gnome.settings-daemon.plugins.media-keys search ['']
+org.gnome.settings-daemon.plugins.media-keys search-static ['XF86Search']
+org.gnome.settings-daemon.plugins.media-keys shutdown ['']
+org.gnome.settings-daemon.plugins.media-keys stop ['']
+org.gnome.settings-daemon.plugins.media-keys stop-static ['XF86AudioStop']
+org.gnome.settings-daemon.plugins.media-keys suspend ['']
+org.gnome.settings-daemon.plugins.media-keys suspend-static ['XF86Sleep']
+org.gnome.settings-daemon.plugins.media-keys toggle-contrast ['']
+org.gnome.settings-daemon.plugins.media-keys touchpad-off ['']
+org.gnome.settings-daemon.plugins.media-keys touchpad-off-static ['XF86TouchpadOff']
+org.gnome.settings-daemon.plugins.media-keys touchpad-on ['']
+org.gnome.settings-daemon.plugins.media-keys touchpad-on-static ['XF86TouchpadOn']
+org.gnome.settings-daemon.plugins.media-keys touchpad-toggle ['']
+org.gnome.settings-daemon.plugins.media-keys touchpad-toggle-static ['XF86TouchpadToggle', '<Ctrl><Super>XF86TouchpadToggle']
+org.gnome.settings-daemon.plugins.media-keys volume-down ['']
+org.gnome.settings-daemon.plugins.media-keys volume-down-precise ['']
+org.gnome.settings-daemon.plugins.media-keys volume-down-precise-static ['<Shift>XF86AudioLowerVolume', '<Ctrl><Shift>XF86AudioLowerVolume']
+org.gnome.settings-daemon.plugins.media-keys volume-down-quiet ['']
+org.gnome.settings-daemon.plugins.media-keys volume-down-quiet-static ['<Alt>XF86AudioLowerVolume', '<Alt><Ctrl>XF86AudioLowerVolume']
+org.gnome.settings-daemon.plugins.media-keys volume-down-static ['XF86AudioLowerVolume', '<Ctrl>XF86AudioLowerVolume']
+org.gnome.settings-daemon.plugins.media-keys volume-mute ['']
+org.gnome.settings-daemon.plugins.media-keys volume-mute-quiet ['']
+org.gnome.settings-daemon.plugins.media-keys volume-mute-quiet-static ['<Alt>XF86AudioMute']
+org.gnome.settings-daemon.plugins.media-keys volume-mute-static ['XF86AudioMute']
+org.gnome.settings-daemon.plugins.media-keys volume-step 6
+org.gnome.settings-daemon.plugins.media-keys volume-up ['']
+org.gnome.settings-daemon.plugins.media-keys volume-up-precise ['']
+org.gnome.settings-daemon.plugins.media-keys volume-up-precise-static ['<Shift>XF86AudioRaiseVolume', '<Ctrl><Shift>XF86AudioRaiseVolume']
+org.gnome.settings-daemon.plugins.media-keys volume-up-quiet ['']
+org.gnome.settings-daemon.plugins.media-keys volume-up-quiet-static ['<Alt>XF86AudioRaiseVolume', '<Alt><Ctrl>XF86AudioRaiseVolume']
+org.gnome.settings-daemon.plugins.media-keys volume-up-static ['XF86AudioRaiseVolume', '<Ctrl>XF86AudioRaiseVolume']
+org.gnome.settings-daemon.plugins.media-keys www @as []
+org.gnome.settings-daemon.plugins.media-keys www-static ['XF86WWW']
+org.gnome.desktop.wm.keybindings activate-window-menu ['<Alt>space']
+org.gnome.desktop.wm.keybindings always-on-top @as []
+org.gnome.desktop.wm.keybindings begin-move ['<Alt>F7']
+org.gnome.desktop.wm.keybindings begin-resize ['<Alt>F8']
+org.gnome.desktop.wm.keybindings close ['<Super>w']
+org.gnome.desktop.wm.keybindings cycle-group ['<Alt>F6']
+org.gnome.desktop.wm.keybindings cycle-group-backward ['<Shift><Alt>F6']
+org.gnome.desktop.wm.keybindings cycle-panels ['<Control><Alt>Escape']
+org.gnome.desktop.wm.keybindings cycle-panels-backward ['<Shift><Control><Alt>Escape']
+org.gnome.desktop.wm.keybindings cycle-windows ['<Alt>Escape']
+org.gnome.desktop.wm.keybindings cycle-windows-backward ['<Shift><Alt>Escape']
+org.gnome.desktop.wm.keybindings lower @as []
+org.gnome.desktop.wm.keybindings maximize @as []
+org.gnome.desktop.wm.keybindings maximize-horizontally @as []
+org.gnome.desktop.wm.keybindings maximize-vertically @as []
+org.gnome.desktop.wm.keybindings minimize ['<Alt>q']
+org.gnome.desktop.wm.keybindings move-to-center @as []
+org.gnome.desktop.wm.keybindings move-to-corner-ne @as []
+org.gnome.desktop.wm.keybindings move-to-corner-nw @as []
+org.gnome.desktop.wm.keybindings move-to-corner-se @as []
+org.gnome.desktop.wm.keybindings move-to-corner-sw @as []
+org.gnome.desktop.wm.keybindings move-to-monitor-down ['<Super><Shift>Down']
+org.gnome.desktop.wm.keybindings move-to-monitor-left ['<Super><Shift>Left']
+org.gnome.desktop.wm.keybindings move-to-monitor-right ['<Super><Shift>Right']
+org.gnome.desktop.wm.keybindings move-to-monitor-up ['<Super><Shift>Up']
+org.gnome.desktop.wm.keybindings move-to-side-e @as []
+org.gnome.desktop.wm.keybindings move-to-side-n @as []
+org.gnome.desktop.wm.keybindings move-to-side-s @as []
+org.gnome.desktop.wm.keybindings move-to-side-w @as []
+org.gnome.desktop.wm.keybindings move-to-workspace-1 ['<Super><Shift>Home']
+org.gnome.desktop.wm.keybindings move-to-workspace-10 @as []
+org.gnome.desktop.wm.keybindings move-to-workspace-11 @as []
+org.gnome.desktop.wm.keybindings move-to-workspace-12 @as []
+org.gnome.desktop.wm.keybindings move-to-workspace-2 @as []
+org.gnome.desktop.wm.keybindings move-to-workspace-3 @as []
+org.gnome.desktop.wm.keybindings move-to-workspace-4 @as []
+org.gnome.desktop.wm.keybindings move-to-workspace-5 @as []
+org.gnome.desktop.wm.keybindings move-to-workspace-6 @as []
+org.gnome.desktop.wm.keybindings move-to-workspace-7 @as []
+org.gnome.desktop.wm.keybindings move-to-workspace-8 @as []
+org.gnome.desktop.wm.keybindings move-to-workspace-9 @as []
+org.gnome.desktop.wm.keybindings move-to-workspace-down ['<Control><Shift><Alt>Down']
+org.gnome.desktop.wm.keybindings move-to-workspace-last ['<Super><Shift>End']
+org.gnome.desktop.wm.keybindings move-to-workspace-left ['<Super><Shift>Page_Up', '<Super><Shift>KP_Prior', '<Super><Shift><Alt>Left', '<Control><Shift><Alt>Left']
+org.gnome.desktop.wm.keybindings move-to-workspace-right ['<Super><Shift>Page_Down', '<Super><Shift>KP_Next', '<Super><Shift><Alt>Right', '<Control><Shift><Alt>Right']
+org.gnome.desktop.wm.keybindings move-to-workspace-up ['<Control><Shift><Alt>Up']
+org.gnome.desktop.wm.keybindings panel-main-menu @as []
+org.gnome.desktop.wm.keybindings panel-run-dialog ['<Alt>F2']
+org.gnome.desktop.wm.keybindings raise @as []
+org.gnome.desktop.wm.keybindings raise-or-lower @as []
+org.gnome.desktop.wm.keybindings set-spew-mark @as []
+org.gnome.desktop.wm.keybindings show-desktop @as []
+org.gnome.desktop.wm.keybindings switch-applications ['<Super>Tab', '<Alt>Tab']
+org.gnome.desktop.wm.keybindings switch-applications-backward ['<Shift><Super>Tab', '<Shift><Alt>Tab']
+org.gnome.desktop.wm.keybindings switch-group ['<Super>Above_Tab', '<Alt>Above_Tab']
+org.gnome.desktop.wm.keybindings switch-group-backward ['<Shift><Super>Above_Tab', '<Shift><Alt>Above_Tab']
+org.gnome.desktop.wm.keybindings switch-input-source @as []
+org.gnome.desktop.wm.keybindings switch-input-source-backward ['<Shift><Super>space', '<Shift>XF86Keyboard']
+org.gnome.desktop.wm.keybindings switch-panels ['<Control><Alt>Tab']
+org.gnome.desktop.wm.keybindings switch-panels-backward ['<Shift><Control><Alt>Tab']
+org.gnome.desktop.wm.keybindings switch-to-workspace-1 ['<Super>Home']
+org.gnome.desktop.wm.keybindings switch-to-workspace-10 @as []
+org.gnome.desktop.wm.keybindings switch-to-workspace-11 @as []
+org.gnome.desktop.wm.keybindings switch-to-workspace-12 @as []
+org.gnome.desktop.wm.keybindings switch-to-workspace-2 @as []
+org.gnome.desktop.wm.keybindings switch-to-workspace-3 @as []
+org.gnome.desktop.wm.keybindings switch-to-workspace-4 @as []
+org.gnome.desktop.wm.keybindings switch-to-workspace-5 @as []
+org.gnome.desktop.wm.keybindings switch-to-workspace-6 @as []
+org.gnome.desktop.wm.keybindings switch-to-workspace-7 @as []
+org.gnome.desktop.wm.keybindings switch-to-workspace-8 @as []
+org.gnome.desktop.wm.keybindings switch-to-workspace-9 @as []
+org.gnome.desktop.wm.keybindings switch-to-workspace-down ['<Control><Alt>Down']
+org.gnome.desktop.wm.keybindings switch-to-workspace-last ['<Super>End']
+org.gnome.desktop.wm.keybindings switch-to-workspace-left ['<Super>Page_Up', '<Super>KP_Prior', '<Super><Alt>Left', '<Control><Alt>Left']
+org.gnome.desktop.wm.keybindings switch-to-workspace-right ['<Super>Page_Down', '<Super>KP_Next', '<Super><Alt>Right', '<Control><Alt>Right']
+org.gnome.desktop.wm.keybindings switch-to-workspace-up ['<Control><Alt>Up']
+org.gnome.desktop.wm.keybindings switch-windows @as []
+org.gnome.desktop.wm.keybindings switch-windows-backward @as []
+org.gnome.desktop.wm.keybindings toggle-above @as []
+org.gnome.desktop.wm.keybindings toggle-fullscreen @as []
+org.gnome.desktop.wm.keybindings toggle-maximized ['<Super>f']
+org.gnome.desktop.wm.keybindings toggle-on-all-workspaces @as []
+org.gnome.desktop.wm.keybindings unmaximize @as []
+
+--- INSTALLED APPS (PACMAN) ---
+adapta-gtk-theme 3.95.0.11-4
+adobe-source-code-pro-fonts 2.042u+1.062i+1.026vf-2
+adw-gtk-theme 6.4-1
+alacritty 0.16.1-1
+alacritty-themes 6.0.2-1
+amd-ucode 20260110-1
+antigravity 1.15.8-1
+arc-gtk-theme 20221218-2
+archlinux-xdg-menu 0.7.7-1
+aria2 1.37.0-2
+ark 25.12.2-1
+baobab 49.1-1
+base 3-2
+base-devel 1-2
+bash-completion 2.17.0-3
+bc 1.08.2-1
+bitwarden 2025.10.0-1
+blueman 2.4.6-2
+bluez 5.85-1
+bluez-utils 5.85-1
+boost 1.89.0-4
+brave-bin 1:1.86.142-1
+bridge-utils 1.7.1-3
+brightnessctl 0.5.1-3
+btop 1.4.6-1
+btrfs-progs 6.17.1-2
+catppuccin-gtk-theme-mocha 1.0.3-1
+chafa 1.18.0-1
+chatty 0.8.8-7
+cliphist 1:0.7.0-1
+cmake 4.2.3-1
+cpio 2.15-3
+cronie 1.7.2-2
+cups 2:2.4.16-1
+d-spy 49.2-1
+dconf-editor 49.0-1
+decibels 49.0-1
+dimland-git r36.3934c32-5
+discord 1:0.0.123-2
+dkms 3.3.0-1
+dnsmasq 2.92-1
+docker 1:29.2.1-1
+dolphin 25.12.2-1
+downgrade 11.8.0-1
+dragon 25.12.2-1
+dunst 1.13.0-1
+edk2-ovmf 202508-1
+efibootmgr 18-3
+endeavour 43.0-5
+epiphany 49.2-1
+eww 0.6.0-1
+exfatprogs 1.3.1-1
+extension-manager 0.6.5-1
+eza 0.23.4-1
+fastfetch 2.58.0-1
+fd 10.3.0-1
+feh 3.11.2-2
+ffmpegthumbnailer 2.3.0-1
+file-roller 44.6-1
+firefox 147.0.3-1
+foot 1.25.0-1
+fsearch 0.2.3-3
+fuzzel 1.14.0-2
+fzf 0.67.0-2
+gdm 49.2-1
+gedit 49.0-2
+ghex 48.3-1
+git 2.53.0-1
+github-cli 2.86.0-1
+glow 2.1.1-1
+gnome-backgrounds 49.0-1
+gnome-boxes 49.1-1
+gnome-browser-connector 42.1-8
+gnome-builder 49.1-1
+gnome-calculator 49.2-1
+gnome-calendar 49.1-1
+gnome-calls 49.1.1-1
+gnome-characters 49.1-1
+gnome-chess 49.2-1
+gnome-clocks 49.0-1
+gnome-color-manager 3.36.2-1
+gnome-connections 49.0-1
+gnome-console 49.2-1
+gnome-contacts 49.0-1
+gnome-control-center 49.4-1
+gnome-disk-utility 46.1-2
+gnome-font-viewer 49.0-1
+gnome-keyring 1:48.0-1
+gnome-logs 49.0-1
+gnome-mahjongg 49.1.1-1
+gnome-maps 49.4-1
+gnome-menus 3.38.1-1
+gnome-mines 49.0.1-1
+gnome-monitor-config-git r13.1e8869e-1
+gnome-music 1:49.1-2
+gnome-nibbles 4.4.2-1
+gnome-remote-desktop 49.2-1
+gnome-robots 41.2-3
+gnome-shell-extension-no-overview 1:49-1
+gnome-shell-extensions 49.0-1
+gnome-software 49.3-1
+gnome-sound-recorder 42.0-5
+gnome-sudoku 49.4-1
+gnome-system-monitor 49.1-1
+gnome-text-editor 49.1-1
+gnome-tour 49.0-1
+gnome-tweaks 49.0-2
+gnome-user-docs 49.4-1
+gnome-user-share 48.2-1
+gnome-weather 49.0-1
+google-chrome 144.0.7559.96-1
+gptfdisk 1.0.10-2
+grilo-plugins 1:0.3.18-1
+grim 1.5.0-2
+grub 2:2.14-1
+grub-btrfs 4.14-1
+gscan2pdf 2.13.5-1
+gst-libav 1.26.10-4
+gst-plugin-pipewire 1:1.4.10-2
+gtk4-layer-shell 1.3.0-1
+gvfs-afc 1.58.1-1
+gvfs-dnssd 1.58.1-1
+gvfs-goa 1.58.1-1
+gvfs-google 1.58.1-1
+gvfs-gphoto2 1.58.1-1
+gvfs-mtp 1.58.1-1
+gvfs-nfs 1.58.1-1
+gvfs-onedrive 1.58.1-1
+gvfs-smb 1.58.1-1
+gvfs-wsdd 1.58.1-1
+hplip 1:3.25.8-4
+htop 3.4.1-1
+hypridle 0.1.7-6
+hyprland 0.53.3-2
+hyprland-protocols 0.7.0-1
+hyprland-relative-workspace-bin 1.1.8-1
+hyprlock 0.9.2-8
+hyprshell-bin 4.9.2-1
+hyprworm 1.1.1-1
+imv 5.0.1-1
+inkscape 1.4.3-2
+inotify-tools 4.25.9.0-1
+iptables-nft 1:1.8.11-2
+iwd 3.10-1
+jq 1.8.1-1
+kate 25.12.2-1
+kitty 0.45.0-4
+konsole 25.12.2-1
+kvantum 1.1.5-1
+kvantum-theme-materia 20220823-3
+less 1:691-2
+libdvdcss 1.5.0-1
+libpulse 17.0+r98+gb096704c0-1
+libreoffice-still 25.8.4-1
+libva-nvidia-driver 0.0.15-1
+libx11-mr293 1.8.12-1
+libxcrypt-compat 4.5.2-1
+lightdm 1:1.32.0-6
+lightdm-gtk-greeter 1:2.0.9-1
+lightsoff 48.1-1
+linux 6.18.7.arch1-1
+linux-firmware 20260110-1
+linux-headers 6.18.7.arch1-1
+localsend-bin 1.17.0-1
+looking-glass 2:B7-5
+looking-glass-module-dkms 2:B7-5
+loupe 49.2-1
+lsd 1.2.0-1
+lua-cjson 2.1.0.14-3
+lua-lgi 0.9.2-12
+lua-posix 36.3-1
+lutris 0.5.19-9
+lxappearance 0.6.4-3
+mako 1.10.0-1
+malcontent 0.13.1-1
+mangowc-git r1241.6680f78-1
+manuals 49.1-1
+materia-transparent-gtk-theme-git 1:r1650.c5d95bbd-1
+matugen-bin 3.1.0-1
+mpv 1:0.41.0-2
+mpvpaper 1.8-1
+mupdf 1.27.0-2
+nano 8.7.1-1
+ncspot 1.3.2-1
+neofetch 7.1.0-2
+neovim 0.11.6-1
+network-manager-applet 1.36.0-1
+networkmanager-dmenu-git r237.bda983f-1
+niri 25.11-1
+noto-fonts-extra 1:2026.02.01-1
+npm 11.8.0-1
+nsxiv 33-2
+ntfs-3g 2022.10.3-2
+nvidia-open-dkms 590.48.01-2
+nwg-dock-hyprland 0.4.8-4
+nwg-look 1.0.6-1
+obs-studio 32.0.4-1
+obsidian 1.11.5-1
+okular 25.12.2-1
+onlyoffice-bin 9.2.1-1
+openbangla-keyboard-bin 2.0.0-1
+openssh 10.2p1-2
+opentabletdriver 0.6.6.2-1
+orca 49.5-2
+orchis-theme 2025_04_25-2
+os-prober 1.83-1
+pamixer 1.6-3
+pandoc-cli 3.5-7
+papers 49.3-1
+papirus-icon-theme 20250501-1
+paraview 6.0.1-9
+pavucontrol 1:6.2-1
+pdftk 3.3.3-4
+pipewire 1:1.4.10-2
+pipewire-alsa 1:1.4.10-2
+pipewire-jack 1:1.4.10-2
+pipewire-pulse 1:1.4.10-2
+pixi 0.63.2-1
+plasma-meta 6.5-1
+plasma-workspace 6.5.5-1
+plasma-x11-session 6.5.5-1
+postgresql 18.1-2
+pyright 1.1.407-1
+python-black 25.12.0-4
+python-colorthief 0.2.1-5
+python-pynvim 0.6.0-2
+python-pypdf 6.6.2-1
+qbittorrent 5.1.4-1
+qemu-full 10.2.0-1
+qogir-gtk-theme 2025.08.17-1
+qt5-wayland 5.15.18+kde+r55-1
+qt5ct 1.9-1
+qt6-wayland 6.10.2-1
+qt6ct 0.11-4
+quadrapassel 49.2.3-1
+quickshell 0.2.1-4
+r 4.5.2-3
+remmina 1:1.4.41-2
+rnote 0.13.1-1
+rofi 2.0.0-1
+rp-pppoe 4.0-5
+rsync 3.4.1-2
+rust 1:1.93.0-1
+rust-analyzer 20260202-1
+rygel 1:45.1-1
+samba 2:4.23.5-1
+satty 0.20.0-1
+scdoc 1.11.4-1
+scotch 7.0.10-2
+showtime 49.1-2
+simple-scan 49.1-1
+slurp 1.5.0-1
+smartmontools 7.5-1
+snap-pac 3.0.1-3
+snapper 0.13.0-2
+snapshot 49.1-1
+sof-firmware 2025.12.2-1
+sox 14.7.0.6-1
+spotify-launcher 0.6.4-1
+starship 1.24.2-1
+sudo 1.9.17.p2-2
+supergfxctl 5.2.7-2
+sushi 46.0-2
+sway-audio-idle-inhibit-git 0.2.0.r64.1da8bdc-1
+swaybg 1.2.1-1
+swayidle 1.9.0-1
+swaylock 1.8.4-1
+swaync 0.12.4-1
+swayosd 0.3.0-1
+swell-foop 48.1-2
+swtpm 0.10.1-1
+swww 0.11.2-1
+sxiv 26-2
+sysstat 12.7.9-1
+teams-for-linux 2.6.18-1
+telegram-desktop 6.4.4-1
+terminus-font 4.49.1-8
+tesseract-data-eng 2:4.1.0-4
+texlab 5.25.1-1
+texlive-basic 2025.2-3
+texlive-binextra 2025.2-3
+texlive-fontsextra 2025.2-3
+texlive-fontsrecommended 2025.2-3
+texlive-latex 2025.2-3
+texlive-latexextra 2025.2-3
+texlive-mathscience 2025.2-3
+texlive-plaingeneric 2025.2-3
+thunar 4.20.7-1
+tigervnc 1.16.0-3
+tree 2.3.1-1
+ttf-cascadia-code 2407.24-2
+ttf-fira-code 6.2-2
+ttf-indic-otf 0.2-12
+ttf-jetbrains-mono 2.304-2
+ttf-jetbrains-mono-nerd 3.4.0-2
+ttf-ms-fonts 2.0-12
+ttf-segoe-ui-variable 1.0-1
+tuned 2.26.0-2
+tuned-ppd 2.26.0-2
+ueberzugpp 2.9.8-3
+uget 2.2.3-7
+usbutils 019-1
+uwsm 0.26.1-1
+vendor-reset-dkms-git r117.084881c-2
+ventoy-bin 1.1.10-2
+vim 9.1.2132-1
+virt-manager 5.1.0-3
+virt-viewer 11.0-4
+visual-studio-code-bin 1.108.2-1
+vlc 3.0.21-32
+vmware-keymaps 1.0-3
+vmware-workstation 25H2-4
+vulkan-radeon 1:25.3.4-1
+waybar 0.14.0-6
+waypaper 2.7-1
+weylus-bin 0.11.4-1
+wget 1.25.0-3
+wine 11.1-2
+wine-gecko 2.47.4-2
+wine-mono 10.4.1-1
+wireless_tools 30.pre9-5
+wireplumber 0.5.13-1
+wkhtmltopdf-bin 0.12.6.1+3-1
+wl-clip-persist 0.5.0-1
+wlogout 1.2.2-0
+wlr-dpms-git r23.92dcde3-1
+wlr-randr 0.5.0-1
+wlsunset 0.4.0-1
+woeusb-ng 0.2.12-3
+wofi 1.5.3-1
+wvdial 1.61-9
+xclip 0.13-6
+xdg-desktop-portal-hyprland 1.3.11-3
+xdg-desktop-portal-wlr 0.8.1-1
+xdg-utils 1.2.1-2
+xf86-video-amdgpu 25.0.0-1
+xorg-xev 1.2.6-1
+xorg-xinit 1.4.4-1
+yaru-icon-theme 25.10.2-1
+yay 12.5.7-1
+yay-debug 12.5.7-1
+yazi 26.1.22-1
+ydotool 1.0.4-2
+zathura 2026.02.03-2
+zathura-pdf-mupdf 2026.02.03-1
+zen-browser-bin 1.18b-1
+zoom 6.7.2.6498-1
+zotero-bin 8.0-1
+zram-generator 1.2.1-1
+
+--- GNOME EXTENSIONS ---
+dash-to-dock@micxgx.gmail.com
+hidetopbar@mathieu.bidon.ca
+blur-my-shell@aunetx
+tilingshell@ferrarodomenico.com
+search-light@icedman.github.com
+CoverflowAltTab@palatis.blogspot.com
+compiz-alike-magic-lamp-effect@hermes83.github.com
+transparent-window@pbxqdown.github.com
+just-perfection-desktop@just-perfection
+gnome-web-search@devyellow.com
+no-screenshot-box@screenshot
+clipmaster@gnome.extension
+dash-to-panel@jderose9.github.com
+dash-in-panel@fthx
+unblank@sun.wxg@gmail.com
+huanghaohhoa@163.com
+advanced-alt-tab@G-dH.github.com
+apps-menu@gnome-shell-extensions.gcampax.github.com
+auto-move-windows@gnome-shell-extensions.gcampax.github.com
+drive-menu@gnome-shell-extensions.gcampax.github.com
+launch-new-instance@gnome-shell-extensions.gcampax.github.com
+light-style@gnome-shell-extensions.gcampax.github.com
+native-window-placement@gnome-shell-extensions.gcampax.github.com
+places-menu@gnome-shell-extensions.gcampax.github.com
+screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com
+status-icons@gnome-shell-extensions.gcampax.github.com
+system-monitor@gnome-shell-extensions.gcampax.github.com
+user-theme@gnome-shell-extensions.gcampax.github.com
+window-list@gnome-shell-extensions.gcampax.github.com
+windowsNavigator@gnome-shell-extensions.gcampax.github.com
+workspace-indicator@gnome-shell-extensions.gcampax.github.com
+no-overview@fthx

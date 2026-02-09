@@ -1,0 +1,769 @@
+[0;34m=== Dotfiles Installation Script ===[0m
+Dotfiles directory: /home/kanak/hyprland_dotfiles
+Log file: /home/kanak/hyprland_dotfiles/install.log
+
+[0;34m[1/7] Initializing configuration[0m
+[0;32m✓[0m Initialized with 7 standard configs
+
+[0;34m[2/7] Discovering additional configs in dotfiles[0m
+
+[1;33mFound additional configs in dotfiles:[0m
+  1) foot
+  2) hyprshell
+  3) kitty
+  4) mako
+  5) matugen
+  6) wlogout
+  7) xfce4
+  8) yazi
+
+Install these configs? Enter numbers (space-separated, e.g., '1 2 3'), 'all', or 'n' to skip:
+Selected all additional configs
+Will install: foot hyprshell kitty mako matugen wlogout xfce4 yazi
+[0;32m✓[0m Added foot to installation list
+[0;32m✓[0m Added hyprshell to installation list
+[0;32m✓[0m Added kitty to installation list
+[0;32m✓[0m Added mako to installation list
+[0;32m✓[0m Added matugen to installation list
+[0;32m✓[0m Added wlogout to installation list
+[0;32m✓[0m Added xfce4 to installation list
+[0;32m✓[0m Added yazi to installation list
+
+[0;34m[3/7] Backing up existing configs[0m
+Backup directory: /home/kanak/.dotfiles-backup-20260124-132439
+
+[0;34m[4/7] Checking for AUR helper (yay)[0m
+Installing yay...
+[0;32m✓[0m yay installed
+
+[0;34m[5/7] Installing official packages[0m
+Found 275 official packages, 41 AUR packages
+[0;32m✓[0m adapta-gtk-theme
+[0;32m✓[0m adobe-source-code-pro-fonts
+[0;32m✓[0m adw-gtk-theme
+[1;33m⊘[0m alacritty (already installed)
+[1;33m⊘[0m amd-ucode (already installed)
+[0;32m✓[0m archlinux-xdg-menu
+[1;33m⊘[0m ark (already installed)
+[0;32m✓[0m baobab
+[1;33m⊘[0m base (already installed)
+[1;33m⊘[0m base-devel (already installed)
+[0;32m✓[0m bash-completion
+[0;32m✓[0m bc
+[0;32m✓[0m bitwarden
+[0;32m✓[0m blueman
+[1;33m⊘[0m bluez (already installed)
+[1;33m⊘[0m bluez-utils (already installed)
+[0;32m✓[0m boost
+[0;32m✓[0m bridge-utils
+[0;32m✓[0m brightnessctl
+[0;32m✓[0m btop
+[1;33m⊘[0m btrfs-progs (already installed)
+[0;32m✓[0m chafa
+[0;32m✓[0m chatty
+[0;32m✓[0m cliphist
+[0;32m✓[0m cmake
+[0;32m✓[0m cpio
+[0;32m✓[0m cronie
+[0;32m✓[0m cups
+[0;32m✓[0m d-spy
+[0;32m✓[0m dconf-editor
+[0;32m✓[0m decibels
+[0;32m✓[0m discord
+[1;33m⊘[0m dkms (already installed)
+[0;32m✓[0m dnsmasq
+[0;32m✓[0m docker
+[1;33m⊘[0m dolphin (already installed)
+[0;32m✓[0m dragon
+[1;33m⊘[0m dunst (already installed)
+[0;32m✓[0m edk2-ovmf
+[1;33m⊘[0m efibootmgr (already installed)
+[0;32m✓[0m endeavour
+[0;32m✓[0m epiphany
+[0;32m✓[0m eza
+[0;32m✓[0m fastfetch
+[0;32m✓[0m fd
+[0;32m✓[0m feh
+[0;32m✓[0m ffmpegthumbnailer
+[0;32m✓[0m file-roller
+[1;33m⊘[0m firefox (already installed)
+[0;32m✓[0m foot
+[0;32m✓[0m fuzzel
+[0;32m✓[0m fzf
+[0;32m✓[0m gdm
+[0;32m✓[0m gedit
+[0;32m✓[0m ghex
+[1;33m⊘[0m git (already installed)
+[0;32m✓[0m github-cli
+[0;32m✓[0m glow
+[0;32m✓[0m gnome-backgrounds
+[0;32m✓[0m gnome-boxes
+[0;32m✓[0m gnome-browser-connector
+[0;32m✓[0m gnome-builder
+[0;32m✓[0m gnome-calculator
+[0;32m✓[0m gnome-calendar
+[0;32m✓[0m gnome-calls
+[0;32m✓[0m gnome-characters
+[0;32m✓[0m gnome-chess
+[0;32m✓[0m gnome-clocks
+[0;32m✓[0m gnome-color-manager
+[0;32m✓[0m gnome-connections
+[0;32m✓[0m gnome-console
+[0;32m✓[0m gnome-contacts
+[0;32m✓[0m gnome-control-center
+[0;32m✓[0m gnome-disk-utility
+[0;32m✓[0m gnome-font-viewer
+[0;32m✓[0m gnome-keyring
+[0;32m✓[0m gnome-logs
+[0;32m✓[0m gnome-mahjongg
+[0;32m✓[0m gnome-maps
+[0;32m✓[0m gnome-menus
+[0;32m✓[0m gnome-mines
+[0;31m✗[0m gnome-music
+[0;32m✓[0m gnome-nibbles
+[0;32m✓[0m gnome-remote-desktop
+[0;32m✓[0m gnome-robots
+[0;32m✓[0m gnome-software
+[0;32m✓[0m gnome-sound-recorder
+[0;32m✓[0m gnome-sudoku
+[0;32m✓[0m gnome-system-monitor
+[0;32m✓[0m gnome-text-editor
+[0;32m✓[0m gnome-tour
+[0;32m✓[0m gnome-tweaks
+[0;32m✓[0m gnome-user-docs
+[0;32m✓[0m gnome-user-share
+[0;32m✓[0m gnome-weather
+[1;33m⊘[0m go (already installed)
+[0;32m✓[0m grim
+[1;33m⊘[0m grub (already installed)
+[1;33m⊘[0m grub-btrfs (already installed)
+[0;32m✓[0m gst-libav
+[1;33m⊘[0m gst-plugin-pipewire (already installed)
+[0;32m✓[0m gtk4-layer-shell
+[0;32m✓[0m gvfs-afc
+[0;32m✓[0m gvfs-dnssd
+[0;32m✓[0m gvfs-goa
+[0;32m✓[0m gvfs-google
+[0;32m✓[0m gvfs-gphoto2
+[0;32m✓[0m gvfs-mtp
+[0;32m✓[0m gvfs-nfs
+[0;32m✓[0m gvfs-onedrive
+[0;32m✓[0m gvfs-smb
+[0;32m✓[0m gvfs-wsdd
+[0;32m✓[0m hplip
+[1;33m⊘[0m htop (already installed)
+[0;32m✓[0m hypridle
+[1;33m⊘[0m hyprland (already installed)
+[0;32m✓[0m hyprland-protocols
+[0;32m✓[0m hyprlock
+[0;32m✓[0m imv
+[0;32m✓[0m inkscape
+[1;33m⊘[0m inotify-tools (already installed)
+[1;33m⊘[0m iwd (already installed)
+[0;32m✓[0m jq
+[1;33m⊘[0m kate (already installed)
+[1;33m⊘[0m kitty (already installed)
+[1;33m⊘[0m konsole (already installed)
+[0;32m✓[0m kvantum
+[0;32m✓[0m kvantum-theme-materia
+[0;32m✓[0m less
+[0;32m✓[0m libdvdcss
+[1;33m⊘[0m libpulse (already installed)
+[1;33m⊘[0m libva-nvidia-driver (already installed)
+[0;32m✓[0m libxcrypt-compat
+[0;32m✓[0m lightdm
+[0;32m✓[0m lightdm-gtk-greeter
+[0;32m✓[0m lightsoff
+[1;33m⊘[0m linux (already installed)
+[1;33m⊘[0m linux-firmware (already installed)
+[1;33m⊘[0m linux-headers (already installed)
+[0;32m✓[0m loupe
+[0;32m✓[0m lsd
+[0;32m✓[0m lua-lgi
+[0;32m✓[0m lua-posix
+[0;32m✓[0m lutris
+[0;32m✓[0m lxappearance
+[0;32m✓[0m mako
+[0;32m✓[0m malcontent
+[0;32m✓[0m manuals
+[0;32m✓[0m mpv
+[1;33m⊘[0m nano (already installed)
+[0;32m✓[0m ncspot
+[0;32m✓[0m neovim
+[0;32m✓[0m network-manager-applet
+[0;32m✓[0m niri
+[0;32m✓[0m noto-fonts-extra
+[0;32m✓[0m npm
+[0;32m✓[0m nsxiv
+[0;32m✓[0m ntfs-3g
+[1;33m⊘[0m nvidia-open-dkms (already installed)
+[0;32m✓[0m nwg-dock-hyprland
+[0;32m✓[0m nwg-look
+[0;32m✓[0m obs-studio
+[0;32m✓[0m obsidian
+[1;33m⊘[0m openssh (already installed)
+[0;32m✓[0m orca
+[0;32m✓[0m orchis-theme
+[0;32m✓[0m os-prober
+[0;32m✓[0m pamixer
+[0;32m✓[0m pandoc-cli
+[0;32m✓[0m papers
+[0;32m✓[0m papirus-icon-theme
+[0;32m✓[0m pavucontrol
+[1;33m⊘[0m pipewire (already installed)
+[1;33m⊘[0m pipewire-alsa (already installed)
+[1;33m⊘[0m pipewire-jack (already installed)
+[1;33m⊘[0m pipewire-pulse (already installed)
+[0;32m✓[0m pixi
+[1;33m⊘[0m plasma-meta (already installed)
+[1;33m⊘[0m plasma-workspace (already installed)
+[0;32m✓[0m postgresql
+[1;33m⊘[0m power-profiles-daemon (already installed)
+[0;32m✓[0m pyright
+[0;32m✓[0m python-black
+[0;32m✓[0m python-colorthief
+[0;32m✓[0m python-pynvim
+[0;32m✓[0m qbittorrent
+[0;32m✓[0m qemu-full
+[1;33m⊘[0m qt5-wayland (already installed)
+[0;32m✓[0m qt5ct
+[1;33m⊘[0m qt6-wayland (already installed)
+[0;32m✓[0m qt6ct
+[0;32m✓[0m quadrapassel
+[0;32m✓[0m quickshell
+[0;32m✓[0m r
+[0;32m✓[0m remmina
+[0;32m✓[0m rofi
+[0;32m✓[0m rp-pppoe
+[0;32m✓[0m rsync
+[0;32m✓[0m rust
+[0;32m✓[0m rust-analyzer
+[0;32m✓[0m rygel
+[0;32m✓[0m satty
+[0;32m✓[0m scdoc
+[0;32m✓[0m scotch
+[0;32m✓[0m showtime
+[0;32m✓[0m simple-scan
+[0;32m✓[0m slurp
+[1;33m⊘[0m smartmontools (already installed)
+[0;32m✓[0m snap-pac
+[1;33m⊘[0m snapper (already installed)
+[0;32m✓[0m snapshot
+[1;33m⊘[0m sof-firmware (already installed)
+[0;32m✓[0m sox
+[0;32m✓[0m spotify-launcher
+[0;32m✓[0m starship
+[1;33m⊘[0m sudo (already installed)
+[0;32m✓[0m sushi
+[0;32m✓[0m swaybg
+[0;32m✓[0m swayidle
+[0;32m✓[0m swaync
+[0;32m✓[0m swayosd
+[0;32m✓[0m swell-foop
+[0;32m✓[0m swww
+[0;32m✓[0m sxiv
+[0;32m✓[0m sysstat
+[0;32m✓[0m telegram-desktop
+[0;32m✓[0m terminus-font
+[0;32m✓[0m texlab
+[0;32m✓[0m texlive-basic
+[0;32m✓[0m texlive-binextra
+[0;32m✓[0m texlive-fontsextra
+[0;32m✓[0m texlive-fontsrecommended
+[0;32m✓[0m texlive-latex
+[0;32m✓[0m texlive-latexextra
+[0;32m✓[0m texlive-mathscience
+[0;32m✓[0m texlive-plaingeneric
+[1;33m⊘[0m thunar (already installed)
+[0;32m✓[0m tigervnc
+[1;33m⊘[0m tk (already installed)
+[0;32m✓[0m tree
+[0;32m✓[0m ttf-cascadia-code
+[0;32m✓[0m ttf-fira-code
+[0;32m✓[0m ttf-indic-otf
+[0;32m✓[0m ttf-jetbrains-mono
+[0;32m✓[0m ttf-jetbrains-mono-nerd
+[0;32m✓[0m ueberzugpp
+[0;32m✓[0m uwsm
+[1;33m⊘[0m vim (already installed)
+[0;32m✓[0m virt-manager
+[0;32m✓[0m vulkan-radeon
+[1;33m⊘[0m waybar (already installed)
+[1;33m⊘[0m wget (already installed)
+[0;32m✓[0m wine
+[0;32m✓[0m wine-gecko
+[0;32m✓[0m wine-mono
+[1;33m⊘[0m wireless_tools (already installed)
+[1;33m⊘[0m wireplumber (already installed)
+[0;32m✓[0m wl-clip-persist
+[1;33m⊘[0m wl-clipboard (already installed)
+[0;32m✓[0m wlr-randr
+[0;32m✓[0m wlsunset
+[1;33m⊘[0m wofi (already installed)
+[0;32m✓[0m wvdial
+[0;32m✓[0m xclip
+[1;33m⊘[0m xdg-desktop-portal-hyprland (already installed)
+[0;32m✓[0m xdg-desktop-portal-wlr
+[1;33m⊘[0m xdg-utils (already installed)
+[0;32m✓[0m xf86-video-amdgpu
+[1;33m⊘[0m xorg-xinit (already installed)
+[1;33m⊘[0m xorg-xrandr (already installed)
+[0;32m✓[0m yazi
+[0;32m✓[0m ydotool
+[0;32m✓[0m zathura
+[0;32m✓[0m zathura-pdf-mupdf
+[1;33m⊘[0m zram-generator (already installed)
+
+[0;34m[6/7] Installing AUR packages[0m
+Installing 41 AUR packages...
+[0;32m✓[0m alacritty-themes
+[0;32m✓[0m antigravity
+[0;32m✓[0m arc-gtk-theme
+[0;32m✓[0m catppuccin-gtk-theme-mocha
+[0;32m✓[0m dimland-git
+[0;32m✓[0m downgrade
+[0;32m✓[0m eww
+[0;32m✓[0m fsearch
+[0;32m✓[0m google-chrome
+[0;32m✓[0m hyprland-relative-workspace-bin
+[0;32m✓[0m hyprshell-bin
+[0;32m✓[0m hyprworm
+[0;32m✓[0m localsend-bin
+[0;32m✓[0m lua-cjson
+[0;32m✓[0m mangowc-git
+[0;32m✓[0m materia-transparent-gtk-theme-git
+[0;32m✓[0m matugen-bin
+[0;32m✓[0m mpvpaper
+[0;32m✓[0m neofetch
+[0;32m✓[0m networkmanager-dmenu-git
+[0;32m✓[0m onlyoffice-bin
+[0;32m✓[0m qogir-gtk-theme
+[0;32m✓[0m supergfxctl
+[0;32m✓[0m sway-audio-idle-inhibit-git
+[0;32m✓[0m swaylock-effects-git
+[0;32m✓[0m teams-for-linux
+[0;32m✓[0m ttf-ms-fonts
+[0;32m✓[0m ventoy-bin
+[0;32m✓[0m visual-studio-code-bin
+[0;32m✓[0m vmware-keymaps
+[0;32m✓[0m vmware-workstation
+[0;32m✓[0m waypaper
+[0;32m✓[0m weylus-bin
+[0;32m✓[0m wkhtmltopdf-bin
+[0;32m✓[0m wlogout
+[0;32m✓[0m wlr-dpms-git
+[0;32m✓[0m yaru-icon-theme
+[1;33m⊘[0m yay (already installed)
+[1;33m⊘[0m yay-debug (already installed)
+[0;32m✓[0m zen-browser-bin
+[0;32m✓[0m zotero-bin
+
+[0;34m[7/7] Creating symlinks[0m
+[0;32m✓[0m Linked: hypr → hypr
+[0;32m✓[0m Linked: waybar → waybar
+[0;32m✓[0m Linked: alacritty → alacritty
+[0;32m✓[0m Linked: Code → Code
+[0;32m✓[0m Linked: rofi → rofi
+[0;32m✓[0m Linked: wireplumber → wireplumber
+[0;32m✓[0m Linked: mimeapps.list → mimeapps.list
+[0;32m✓[0m Linked: foot → foot
+[0;32m✓[0m Linked: hyprshell → hyprshell
+[0;32m✓[0m Linked: kitty → kitty
+[0;32m✓[0m Linked: mako → mako
+[0;32m✓[0m Linked: matugen → matugen
+[0;32m✓[0m Linked: wlogout → wlogout
+[0;32m✓[0m Linked: xfce4 → xfce4
+[0;32m✓[0m Linked: yazi → yazi
+[0;32m✓[0m Made hypr scripts executable
+[0;32m✓[0m Installed web app: chatgpt.desktop
+[0;32m✓[0m Installed web app: claude.desktop
+[0;32m✓[0m Installed web app: gmail.desktop
+[0;32m✓[0m Installed web app: overleaf.desktop
+[0;32m✓[0m Installed web app: youtube.desktop
+[0;32m✓[0m Updated desktop database
+
+[0;34m==================== INSTALLATION SUMMARY ====================[0m
+
+[0;32m✓ SUCCEEDED (285):[0m
+  - Initialized with 7 standard configs
+  - Added foot to installation list
+  - Added hyprshell to installation list
+  - Added kitty to installation list
+  - Added mako to installation list
+  - Added matugen to installation list
+  - Added wlogout to installation list
+  - Added xfce4 to installation list
+  - Added yazi to installation list
+  - yay installed
+  - adapta-gtk-theme
+  - adobe-source-code-pro-fonts
+  - adw-gtk-theme
+  - archlinux-xdg-menu
+  - baobab
+  - bash-completion
+  - bc
+  - bitwarden
+  - blueman
+  - boost
+  - bridge-utils
+  - brightnessctl
+  - btop
+  - chafa
+  - chatty
+  - cliphist
+  - cmake
+  - cpio
+  - cronie
+  - cups
+  - d-spy
+  - dconf-editor
+  - decibels
+  - discord
+  - dnsmasq
+  - docker
+  - dragon
+  - edk2-ovmf
+  - endeavour
+  - epiphany
+  - eza
+  - fastfetch
+  - fd
+  - feh
+  - ffmpegthumbnailer
+  - file-roller
+  - foot
+  - fuzzel
+  - fzf
+  - gdm
+  - gedit
+  - ghex
+  - github-cli
+  - glow
+  - gnome-backgrounds
+  - gnome-boxes
+  - gnome-browser-connector
+  - gnome-builder
+  - gnome-calculator
+  - gnome-calendar
+  - gnome-calls
+  - gnome-characters
+  - gnome-chess
+  - gnome-clocks
+  - gnome-color-manager
+  - gnome-connections
+  - gnome-console
+  - gnome-contacts
+  - gnome-control-center
+  - gnome-disk-utility
+  - gnome-font-viewer
+  - gnome-keyring
+  - gnome-logs
+  - gnome-mahjongg
+  - gnome-maps
+  - gnome-menus
+  - gnome-mines
+  - gnome-nibbles
+  - gnome-remote-desktop
+  - gnome-robots
+  - gnome-software
+  - gnome-sound-recorder
+  - gnome-sudoku
+  - gnome-system-monitor
+  - gnome-text-editor
+  - gnome-tour
+  - gnome-tweaks
+  - gnome-user-docs
+  - gnome-user-share
+  - gnome-weather
+  - grim
+  - gst-libav
+  - gtk4-layer-shell
+  - gvfs-afc
+  - gvfs-dnssd
+  - gvfs-goa
+  - gvfs-google
+  - gvfs-gphoto2
+  - gvfs-mtp
+  - gvfs-nfs
+  - gvfs-onedrive
+  - gvfs-smb
+  - gvfs-wsdd
+  - hplip
+  - hypridle
+  - hyprland-protocols
+  - hyprlock
+  - imv
+  - inkscape
+  - jq
+  - kvantum
+  - kvantum-theme-materia
+  - less
+  - libdvdcss
+  - libxcrypt-compat
+  - lightdm
+  - lightdm-gtk-greeter
+  - lightsoff
+  - loupe
+  - lsd
+  - lua-lgi
+  - lua-posix
+  - lutris
+  - lxappearance
+  - mako
+  - malcontent
+  - manuals
+  - mpv
+  - ncspot
+  - neovim
+  - network-manager-applet
+  - niri
+  - noto-fonts-extra
+  - npm
+  - nsxiv
+  - ntfs-3g
+  - nwg-dock-hyprland
+  - nwg-look
+  - obs-studio
+  - obsidian
+  - orca
+  - orchis-theme
+  - os-prober
+  - pamixer
+  - pandoc-cli
+  - papers
+  - papirus-icon-theme
+  - pavucontrol
+  - pixi
+  - postgresql
+  - pyright
+  - python-black
+  - python-colorthief
+  - python-pynvim
+  - qbittorrent
+  - qemu-full
+  - qt5ct
+  - qt6ct
+  - quadrapassel
+  - quickshell
+  - r
+  - remmina
+  - rofi
+  - rp-pppoe
+  - rsync
+  - rust
+  - rust-analyzer
+  - rygel
+  - satty
+  - scdoc
+  - scotch
+  - showtime
+  - simple-scan
+  - slurp
+  - snap-pac
+  - snapshot
+  - sox
+  - spotify-launcher
+  - starship
+  - sushi
+  - swaybg
+  - swayidle
+  - swaync
+  - swayosd
+  - swell-foop
+  - swww
+  - sxiv
+  - sysstat
+  - telegram-desktop
+  - terminus-font
+  - texlab
+  - texlive-basic
+  - texlive-binextra
+  - texlive-fontsextra
+  - texlive-fontsrecommended
+  - texlive-latex
+  - texlive-latexextra
+  - texlive-mathscience
+  - texlive-plaingeneric
+  - tigervnc
+  - tree
+  - ttf-cascadia-code
+  - ttf-fira-code
+  - ttf-indic-otf
+  - ttf-jetbrains-mono
+  - ttf-jetbrains-mono-nerd
+  - ueberzugpp
+  - uwsm
+  - virt-manager
+  - vulkan-radeon
+  - wine
+  - wine-gecko
+  - wine-mono
+  - wl-clip-persist
+  - wlr-randr
+  - wlsunset
+  - wvdial
+  - xclip
+  - xdg-desktop-portal-wlr
+  - xf86-video-amdgpu
+  - yazi
+  - ydotool
+  - zathura
+  - zathura-pdf-mupdf
+  - alacritty-themes
+  - antigravity
+  - arc-gtk-theme
+  - catppuccin-gtk-theme-mocha
+  - dimland-git
+  - downgrade
+  - eww
+  - fsearch
+  - google-chrome
+  - hyprland-relative-workspace-bin
+  - hyprshell-bin
+  - hyprworm
+  - localsend-bin
+  - lua-cjson
+  - mangowc-git
+  - materia-transparent-gtk-theme-git
+  - matugen-bin
+  - mpvpaper
+  - neofetch
+  - networkmanager-dmenu-git
+  - onlyoffice-bin
+  - qogir-gtk-theme
+  - supergfxctl
+  - sway-audio-idle-inhibit-git
+  - swaylock-effects-git
+  - teams-for-linux
+  - ttf-ms-fonts
+  - ventoy-bin
+  - visual-studio-code-bin
+  - vmware-keymaps
+  - vmware-workstation
+  - waypaper
+  - weylus-bin
+  - wkhtmltopdf-bin
+  - wlogout
+  - wlr-dpms-git
+  - yaru-icon-theme
+  - zen-browser-bin
+  - zotero-bin
+  - Linked: hypr → hypr
+  - Linked: waybar → waybar
+  - Linked: alacritty → alacritty
+  - Linked: Code → Code
+  - Linked: rofi → rofi
+  - Linked: wireplumber → wireplumber
+  - Linked: mimeapps.list → mimeapps.list
+  - Linked: foot → foot
+  - Linked: hyprshell → hyprshell
+  - Linked: kitty → kitty
+  - Linked: mako → mako
+  - Linked: matugen → matugen
+  - Linked: wlogout → wlogout
+  - Linked: xfce4 → xfce4
+  - Linked: yazi → yazi
+  - Made hypr scripts executable
+  - Installed web app: chatgpt.desktop
+  - Installed web app: claude.desktop
+  - Installed web app: gmail.desktop
+  - Installed web app: overleaf.desktop
+  - Installed web app: youtube.desktop
+  - Updated desktop database
+
+[1;33m⊘ SKIPPED (62):[0m
+  - alacritty (already installed)
+  - amd-ucode (already installed)
+  - ark (already installed)
+  - base (already installed)
+  - base-devel (already installed)
+  - bluez (already installed)
+  - bluez-utils (already installed)
+  - btrfs-progs (already installed)
+  - dkms (already installed)
+  - dolphin (already installed)
+  - dunst (already installed)
+  - efibootmgr (already installed)
+  - firefox (already installed)
+  - git (already installed)
+  - go (already installed)
+  - grub (already installed)
+  - grub-btrfs (already installed)
+  - gst-plugin-pipewire (already installed)
+  - htop (already installed)
+  - hyprland (already installed)
+  - inotify-tools (already installed)
+  - iwd (already installed)
+  - kate (already installed)
+  - kitty (already installed)
+  - konsole (already installed)
+  - libpulse (already installed)
+  - libva-nvidia-driver (already installed)
+  - linux (already installed)
+  - linux-firmware (already installed)
+  - linux-headers (already installed)
+  - nano (already installed)
+  - nvidia-open-dkms (already installed)
+  - openssh (already installed)
+  - pipewire (already installed)
+  - pipewire-alsa (already installed)
+  - pipewire-jack (already installed)
+  - pipewire-pulse (already installed)
+  - plasma-meta (already installed)
+  - plasma-workspace (already installed)
+  - power-profiles-daemon (already installed)
+  - qt5-wayland (already installed)
+  - qt6-wayland (already installed)
+  - smartmontools (already installed)
+  - snapper (already installed)
+  - sof-firmware (already installed)
+  - sudo (already installed)
+  - thunar (already installed)
+  - tk (already installed)
+  - vim (already installed)
+  - waybar (already installed)
+  - wget (already installed)
+  - wireless_tools (already installed)
+  - wireplumber (already installed)
+  - wl-clipboard (already installed)
+  - wofi (already installed)
+  - xdg-desktop-portal-hyprland (already installed)
+  - xdg-utils (already installed)
+  - xorg-xinit (already installed)
+  - xorg-xrandr (already installed)
+  - zram-generator (already installed)
+  - yay (already installed)
+  - yay-debug (already installed)
+
+[0;31m✗ FAILED (1):[0m
+  - gnome-music
+
+[0;34m==================== TROUBLESHOOTING ====================[0m
+
+[1;33mHow to fix failed items:[0m
+
+📦 [1;33mPackage installation failures:[0m
+   Try installing failed packages manually:
+   [0;34msudo pacman -S <package-name>[0m  # for official repos
+   [0;34myay -S <package-name>[0m          # for AUR packages
+
+   Check package names - they might be:
+   - Renamed or removed from repos
+   - Require different repo (multilib, etc.)
+   - Have dependency conflicts
+
+   View detailed errors in: /home/kanak/hyprland_dotfiles/install.log
+
+[1;33mNeed more help?[0m
+   1. Check full log: [0;34mcat /home/kanak/hyprland_dotfiles/install.log[0m
+   2. Search Arch Wiki: [0;34mhttps://wiki.archlinux.org[0m
+   3. Check AUR package pages for specific issues
+
+[0;34m=============================================================[0m
+
+Backup saved to: [0;34m/home/kanak/.dotfiles-backup-20260124-132439[0m
+Full log saved to: [0;34m/home/kanak/hyprland_dotfiles/install.log[0m
+
+[1;33m⚠ Installation completed with some failures[0m
+   Review the summary above and fix failed items
+   You can re-run this script after fixing issues
